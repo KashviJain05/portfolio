@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
+        <Analytics/>
       </header>
     </div>
   );
