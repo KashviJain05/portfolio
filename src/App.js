@@ -1,25 +1,39 @@
-import { Analytics } from '@vercel/analytics/react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
+import { dark } from './styles/Themes';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { useRef } from 'react';
+import Home from './sections/Home';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 function App() {
+  const containerRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello Kashvi. This is your portfolio.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <GlobalStyles />
+
+      {/* ThemeProvider is a styled component element which provides ypur own custom
+    theme available to whole DOM tree   */}
+    
+      <ThemeProvider theme={dark}>
+
+          {/* Used smooth scroll in whole application */}
+
+        <LocomotiveScrollProvider
+          options={{
+            smooth: true,
+          }}
+          watch={[]}
+          containerRef={containerRef}
         >
-        </a>
-        <Analytics/>
-      </header>
-    </div>
+          <main data-scroll-container ref={containerRef}>
+            <Home/>
+          </main>
+        </LocomotiveScrollProvider>
+      </ThemeProvider>
+    </>
   );
 }
 
