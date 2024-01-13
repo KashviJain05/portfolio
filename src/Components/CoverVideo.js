@@ -70,6 +70,7 @@ const Title= styled.div`
 
         h2 {
             font-size: ${props=>props.theme.fontlg};
+            margin-top:10px;
         }
     }
 `
@@ -120,7 +121,7 @@ const CoverVideo=()=>{
             
             })}
         </div>
-                <h2 ref={el}></h2>
+                <h2 ref={el} data-scroll data-scroll-delay={0.13} data-scroll-speed="5"></h2>
                 </Title>
                 <video src={videoadd} type="video/mp4" autoPlay muted loop/>
             </Section>
