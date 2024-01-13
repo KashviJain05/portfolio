@@ -14,7 +14,6 @@ for(let i=0;i<name.length;i++){
         delayScroll:delayScroll
     }
 }
-console.log(nameArr);
 
 // secion which ontains cover video and tite
 const Section= styled.section`
@@ -29,16 +28,6 @@ const Section= styled.section`
     }
 `
 
-// make the video background dark
-const DarkOverlay= styled.div`
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    z-index:1;
-    background-color:${props=>`rgba(${props.theme.bodyRGBA},0.6)`};
-`
 
 // styled title component 
 const Title= styled.div`
@@ -72,7 +61,6 @@ const Title= styled.div`
         font-family: 'Sirin Stencil';
         font-size: ${props=>props.theme.fontxl};
         text-shadow: 1px 1px 1px ${props=>props.theme.body};
-        transition: margin-top 0.3s ease; /* Add transition */
     }
 
     @media (max-width: 768px) {
@@ -132,9 +120,8 @@ const CoverVideo=()=>{
             
             })}
         </div>
-                <h2 ref={el} data-scroll data-scroll-delay="0.13" data-scroll-speed="5"></h2>
+                <h2 ref={el}></h2>
                 </Title>
-                <DarkOverlay/>
                 <video src={videoadd} type="video/mp4" autoPlay muted loop/>
             </Section>
     )
