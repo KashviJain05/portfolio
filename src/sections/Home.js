@@ -1,18 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import CoverVideo from "../Components/CoverVideo";
 
 // creating a section styled component
 const Section = styled.section`
-    position:realtive;
+    position:relative;
     min-height:200vh;
-    overflow:hiden;
+    overflow:hidden;
 `
 
 const Home =()=>{
     return(
         <>
             <Section>
-                Home
+                <CoverVideo/>
+                Logo
+                About
             </Section>
         </>
     )
