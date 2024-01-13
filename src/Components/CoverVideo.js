@@ -4,9 +4,17 @@ import videoadd from '../assets/hero_video/video_editing.mp4'
 import Typed from 'typed.js';
 
 // defining name array
-const name= "KASHVI JAIN"
-const nameArr=name.split('');
-
+const name= "KASHVI JAIN";
+let nameArr=[];
+let delayScroll=0.26;
+for(let i=0;i<name.length;i++){
+    delayScroll-=0.02;
+    nameArr[i]={
+        character:name[i],
+        delayScroll:delayScroll
+    }
+}
+console.log(nameArr);
 
 // secion which ontains cover video and tite
 const Section= styled.section`
@@ -110,16 +118,19 @@ const CoverVideo=()=>{
         These attributes provide configuration options for Locomotive Scroll to determine how elements should move, fade, or otherwise change based on the scroll position. */}
 
         <div>
-          {nameArr.map((character, index) => (
-            <h1
+          {nameArr.map((item, index) =>{
+            return(
+                <h1
               key={index}
               data-scroll
-              data-scroll-delay="0.13"
+              data-scroll-delay={item.delayScroll}
               data-scroll-speed="5"
             >
-              {character === ' ' ? '\u00A0 ' : character}
+              {item.character === ' ' ? '\u00A0 ' : item.character}
             </h1>
-          ))}
+            )
+            
+            })}
         </div>
                 <h2 ref={el} data-scroll data-scroll-delay="0.13" data-scroll-speed="5"></h2>
                 </Title>
