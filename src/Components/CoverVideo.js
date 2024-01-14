@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import videoadd from '../assets/hero_video/video_editing.mp4'
 import Typed from 'typed.js';
+import { motion } from 'framer-motion/dist/framer-motion'
 
 // defining name array
 const name= "KASHVI JAIN";
@@ -30,7 +31,7 @@ const Section= styled.section`
 
 
 // styled title component 
-const Title= styled.div`
+const Title= styled(motion.div)`
     position:absolute;
     top:0;
     bottom:0;
@@ -75,6 +76,30 @@ const Title= styled.div`
     }
 `
 
+// Animating name using Framer Motion
+const container={
+    hidden:{
+        opacity:0,
+    },
+    show:{
+        opacity:1,
+
+        transition:{
+            delayChildern:2,
+            staggerChildren:0.3,
+        }
+    },
+}
+
+const textAnime={
+    hidden:{
+        opacity:0,
+    },
+    show:{
+        opacity:1,
+    },
+}
+
 // cover video component
 const CoverVideo=()=>{
 
@@ -101,7 +126,7 @@ const CoverVideo=()=>{
 
     return(
             <Section>
-                <Title>
+                <Title variants={container} initial="hidden" animate="show">
 
         {/* In Locomotive Scroll, the data-scroll attribute is commonly used in HTML elements to define how they should behave as the user scrolls. 
         These attributes provide configuration options for Locomotive Scroll to determine how elements should move, fade, or otherwise change based on the scroll position. */}
@@ -109,14 +134,15 @@ const CoverVideo=()=>{
         <div>
           {nameArr.map((item, index) =>{
             return(
-                <h1
+                <motion.h1
               key={index}
               data-scroll
               data-scroll-delay={item.delayScroll}
               data-scroll-speed="5"
+              variants={textAnime}
             >
               {item.character === ' ' ? '\u00A0 ' : item.character}
-            </h1>
+            </motion.h1>
             )
             
             })}

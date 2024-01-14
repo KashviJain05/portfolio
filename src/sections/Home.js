@@ -14,7 +14,6 @@ const Home =()=>{
         <>
             <Section>
                 <CoverVideo/>
-                Logo
                 About
             </Section>
         </>
