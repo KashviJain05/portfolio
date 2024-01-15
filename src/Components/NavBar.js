@@ -22,7 +22,7 @@ const NavContainer= styled(motion.div)`
 
     // media query for navbar container
 
-    @media (max-width: 40em){
+    @media (max-width: 60em){
         top: ${props => props.show ? '0' : 'calc(-50vh - 4rem)'};
     }
 
@@ -74,7 +74,7 @@ const MenuItems=styled.ul`
     }
 
     // media query for menu items
-    @media (max-width: 40em){
+    @media (max-width: 60em){
         flex-direction: column;
         padding: 2rem 0;
         height:50vh;

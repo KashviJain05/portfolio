@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/alata": "^5.0.8",
     "@fontsource/kaushan-script": "^5.0.18",
     "@fontsource/sirin-stencil": "^5.0.18",
     "@testing-library/jest-dom": "^5.17.0",
