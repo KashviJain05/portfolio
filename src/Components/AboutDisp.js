@@ -176,11 +176,7 @@ const AboutDisp=()=>{
    return(
     <Container>
         <ContainerWrap>
-            <h2
-                data-scroll
-                data-scroll-delay="0.13"
-                data-scroll-speed="1"
-            >~About</h2>
+            <h2>~About</h2>
             <ContentArea>
                 <Profile 
                     data-scroll
