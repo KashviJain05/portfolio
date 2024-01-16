@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import imgAdd from "../assets/images/ProfilePic.jpg";
+import AnimImg from "../assets/images/Animation Image.png"
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useEffect } from "react";
+
 
 const Container= styled.div`
     padding:40px 80px 40px 80px;
@@ -85,9 +91,78 @@ const Profile= styled.div`
 
 const StackAnimation=styled.div`
 
+    width:50%;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+
+    img{
+        width:900px;
+        height:500px;
+        margin-top:-10px;
+
+        @keyframes mymove {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+              transform: rotate(180deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+        animation: mymove 35s infinite;
+
+        @media(max-width: 60em){
+            width:700px;
+            height:300px;
+        }
+        
+    }
+
+`
+
+const AnimationContent= styled.div`
+    position:absolute;
+    top:51%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:30px;
+    overflow:hidden;
+    font-size:20px;
+    font-family:'Alata';
+
+    @media(max-width: 60em){
+        width:90%;
+    }
+    
 `
 
 const AboutDisp=()=>{
+
+    useEffect(() => {
+        try {
+          gsap.to(".Animetext", {
+            y: "-80px",
+            repeat: -1,
+            duration: 8,
+            yoyo: true,
+            opacity: 1,
+            delay: 1,
+          });
+        } catch (error) {
+          console.error('GSAP animation error:', error);
+        }
+      }, []);
+      
+    
    return(
     <Container>
         <ContainerWrap>
@@ -103,7 +178,12 @@ const AboutDisp=()=>{
                         </p>
                 </Profile>
                 <StackAnimation>
-                    <p>Animation says Hi</p>
+                    <AnimationContent >
+                        <span className="Animetext">Premiere Pro</span>
+                        <span className="Animetext">DaVinci Resolve</span>
+                        <span className="Animetext">Final Cut Pro</span>    
+                    </AnimationContent>
+                    <img src={AnimImg} className="Animeimage"/>                
                 </StackAnimation>
             </ContentArea>
         </ContainerWrap>
