@@ -1,30 +1,32 @@
+// importing the libraries
 import React from "react";
 import styled from "styled-components";
 import imgAdd from "../assets/images/ProfilePic.jpg";
 import AnimImg from "../assets/images/Animation Image.png"
-import { useRef } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useEffect } from "react";
+import { useEffect } from "react"; 
 
-
+// container div for about display
 const Container= styled.div`
     padding:40px 80px 40px 80px;
     color:#fff;
     font-family:'Alata';
 
-
+    //media query to adjust padding
     @media(max-width:60em){
         padding:10px 20px 10px 20px;
     }
 `
 
+// div for wrapping both heading and about content
 const ContainerWrap= styled.div`
 
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:start;
+
+// styles for heading along with media queries
 
     h2{
         width:100%;
@@ -115,7 +117,7 @@ const StackAnimation=styled.div`
             }
           }
 
-        animation: mymove 35s infinite;
+        animation: mymove 45s infinite;
 
         @media(max-width: 60em){
             width:700px;
@@ -147,28 +149,32 @@ const AnimationContent= styled.div`
 
 const AboutDisp=()=>{
 
-    useEffect(() => {
-        try {
-          gsap.to(".Animetext", {
-            y: "-80px",
-            repeat: -1,
-            duration: 8,
-            yoyo: true,
-            opacity: 1,
-            delay: 1,
-          });
-        } catch (error) {
-          console.error('GSAP animation error:', error);
-        }
-      }, []);
-      
+        
+        useEffect(() => {
+            
+
+             try {
+                AOS.init();
+                AOS.refresh();
+        gsap.to(".Animetext", {
+          y: "-80px",
+          repeat: -1,
+          duration: 8,
+          yoyo: true,
+          opacity: 1,
+          delay: 1,
+        });
+      } catch (error) {
+        console.error('GSAP animation error:', error);
+      }
+        }, []);
     
    return(
     <Container>
         <ContainerWrap>
             <h2>~About</h2>
             <ContentArea>
-                <Profile>
+                <Profile >
                     <img src={imgAdd}/>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
