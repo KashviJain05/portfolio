@@ -47,6 +47,8 @@ const ContainerWrap= styled.div`
     }
 `
 
+// area which contains both profile and stack animation
+
 const ContentArea= styled.div`
     display:flex;
     gap:4rem;
@@ -62,6 +64,7 @@ const ContentArea= styled.div`
     }
 `
 
+// profile section containing image and content for about
 const Profile= styled.div`
     box-shadow: 0px 10px 15px -3px rgb(34,34,79);
     border-radius:15px;
@@ -90,6 +93,8 @@ const Profile= styled.div`
     }
 
 `
+
+// div for the rotating stack animation
 
 const StackAnimation=styled.div`
 
@@ -128,6 +133,8 @@ const StackAnimation=styled.div`
 
 `
 
+//div which contains the animation content ... ie tech stack
+
 const AnimationContent= styled.div`
     position:absolute;
     top:51%;
@@ -147,22 +154,20 @@ const AnimationContent= styled.div`
     
 `
 
+// our about display component
+
 const AboutDisp=()=>{
 
         
         useEffect(() => {
-            
-
-             try {
-                AOS.init();
-                AOS.refresh();
-        gsap.to(".Animetext", {
-          y: "-80px",
-          repeat: -1,
-          duration: 8,
-          yoyo: true,
-          opacity: 1,
-          delay: 1,
+            try {
+                gsap.to(".Animetext", {
+                y: "-80px",
+                repeat: -1,
+                duration: 8,
+                yoyo: true,
+                opacity: 1,
+                delay: 1,
         });
       } catch (error) {
         console.error('GSAP animation error:', error);
