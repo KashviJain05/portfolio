@@ -158,7 +158,6 @@ const AnimationContent= styled.div`
 
 const AboutDisp=()=>{
 
-        
         useEffect(() => {
             try {
                 gsap.to(".Animetext", {
@@ -177,9 +176,17 @@ const AboutDisp=()=>{
    return(
     <Container>
         <ContainerWrap>
-            <h2>~About</h2>
+            <h2
+                data-scroll
+                data-scroll-delay="0.13"
+                data-scroll-speed="1"
+            >~About</h2>
             <ContentArea>
-                <Profile >
+                <Profile 
+                    data-scroll
+                    data-scroll-delay="0.13"
+                    data-scroll-speed="2"
+                >
                     <img src={imgAdd}/>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -188,7 +195,11 @@ const AboutDisp=()=>{
                         Contrary to popular belief, Lorem Ipsum is not simply random text. 
                         </p>
                 </Profile>
-                <StackAnimation>
+                <StackAnimation
+                    data-scroll
+                    data-scroll-delay="0.13"
+                    data-scroll-speed="2"
+                >
                     <AnimationContent >
                         <span className="Animetext">Premiere Pro</span>
                         <span className="Animetext">DaVinci Resolve</span>
