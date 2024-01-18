@@ -4,7 +4,7 @@ import AboutDisp from "../Components/AboutDisp";
 
 const Section = styled.section`
     position:relative;
-    min-height:200vh;
+    min-height:100vh;
     overflow:hidden;
     background:rgb(8,7,11);
 `

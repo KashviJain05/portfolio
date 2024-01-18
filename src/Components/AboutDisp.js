@@ -137,7 +137,7 @@ const StackAnimation=styled.div`
 
 const AnimationContent= styled.div`
     position:absolute;
-    top:51%;
+    top:50%;
     left:50%;
     transform:translate(-50%, -50%);
     display:flex;
