@@ -25,12 +25,16 @@ const Container= styled.div`
 `
 
 const BannerComponent= styled.h1`
-    font-size:${props=>props.theme.fontxxl};
+    font-size:${props=>props.theme.fontxxxl};
     font-family:"Kaushan Script";
-    color:rgb(8,7,11);
+    color:#fff;
     white-space:nowrap;
     text-transform:uppercase;
     line-height:1;
+
+    @media(max-width:80em){
+        font-size:${props=>props.theme.fontxxl};
+    }
 
     @media(max-width:60em){
         font-size:1.5em;
@@ -38,11 +42,13 @@ const BannerComponent= styled.h1`
 
     span{
         display:block;
-        background-color:#fff;
+        background-color:rgb(8,7,11);
         padding:1rem 2rem;
     }
 `
 
+// Banner component that works on Locomotive Scroll and only triggers when data-scroll-target appears
+// Here target is container
 
 export default function Banner(){
     return(
