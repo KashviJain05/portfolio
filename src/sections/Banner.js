@@ -22,6 +22,10 @@ const Container= styled.div`
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
+
+    @media(max-width:60em){
+        min-height:35vh;
+    }
 `
 
 const BannerComponent= styled.h1`

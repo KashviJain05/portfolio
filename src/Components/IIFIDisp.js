@@ -6,7 +6,7 @@ const Container = styled.div`
     padding:40px 80px 40px 80px;
     color:#fff;
     font-family:'Alata';
-
+    margin-bottom:20px;
     //media query to adjust padding
     @media(max-width:60em){
         padding:10px 20px 10px 20px;
@@ -60,6 +60,10 @@ const ContentArea = styled.div`
         letter-spacing: 1.5px;
         line-height: 25px;
         font-size:${props=>props.theme.fontlg};
+
+        @media(max-width:60em){
+            letter-spacing:1.2px;
+        }
     }
 `
 

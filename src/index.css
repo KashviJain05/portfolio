@@ -1,12 +1,12 @@
 .swiper_container {
-    height: 65vh;
+    height: 50vh;
     padding: 2rem 0;
     position: relative;
   }
   
   .swiper-slide {
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
     position: relative;
   }
   

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styled from 'styled-components';
 import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectCoverflow, Pagination, Navigation } from 'swiper';
@@ -13,10 +14,22 @@ import IIFI6 from "../assets/images/IIFI/IIFI6.jpg";
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 const images = [IIFI1, IIFI2, IIFI3, IIFI4, IIFI5, IIFI6];
+const Container=styled.div`
+   width:70%;
+
+   @media(max-width:80em){
+      width:85%;
+   }
+
+   @media(max-width:60em){
+      width:100%;
+   }
+`
+
 
 export default function IFFIGallery(){
    return(
-     <>
+     <Container>
        <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -56,6 +69,6 @@ export default function IFFIGallery(){
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-     </>
+     </Container>
    )
 }
