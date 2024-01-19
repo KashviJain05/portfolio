@@ -52,7 +52,6 @@ const ContainerWrap= styled.div`
 
 const ContentArea= styled.div`
     display:flex;
-    gap:4rem;
     width:100%;
     justify-content:space-around;
     flex-wrap:wrap;
