@@ -8,7 +8,7 @@ import Home from './sections/Home';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import About from './sections/About';
 import Banner from './sections/Banner';
-import IIFE from './sections/IIFE';
+import IIFI from './sections/IIFI';
 
 function App() {
   const containerRef = useRef(null);
@@ -43,7 +43,7 @@ function App() {
             <Home/>
             <About/>
             <Banner/>
-            <IIFE/>
+            <IIFI/>
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>

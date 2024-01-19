@@ -35,6 +35,7 @@ const ContainerWrap= styled.div`
         color: transparent;
         background-image:linear-gradient(45deg, rgba(219,217,255,1) 0%, rgba(193,72,209,1) 43%, rgba(168,62,206,1) 90%);
         border-bottom: 2px dashed #fff;
+        border-top: 2px dashed #fff;
         padding-bottom: 4px;
 
         @media(max-width:60em){
@@ -89,7 +90,9 @@ const Profile= styled.div`
     p{
         padding:20px;
         text-align:left;
-
+        letter-spacing: 1.5px;
+        line-height: 25px;
+        font-size:${props=>props.theme.fontlg};
     }
 
 `
