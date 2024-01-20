@@ -24,7 +24,6 @@
     width: 100%;
     height: 100%;
     border-radius: 2rem;
-    /* object-fit: contain; */
   }
   
   .swiper-slide-shadow-left,
@@ -80,18 +79,17 @@
     border-radius: 50%;
     left: 42%;
     transform: translateX(-42%);
-    filter: drop-shadow(0px 8px 24px rgba(225, 226, 230, 0.1));
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
   }
   
   .slider-controler .slider-arrow ion-icon {
-    font-size: 2rem;
-    color: #000000;
-    height: 15px;
-    width: 15px;
+    font-size: 20px;
+    color: #222224;
   }
   
   .slider-controler .slider-arrow::after {
-    content: '';
+    /* content: ''; */
+    font-size: 25px;
   }
   
   .swiper-pagination {

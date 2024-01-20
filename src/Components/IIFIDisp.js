@@ -63,6 +63,7 @@ const ContentArea = styled.div`
     line-height: 25px;
     font-size: ${(props) => props.theme.fontlg};
     box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
+    border-radius: 15px;
 
     @media (max-width: 60em) {
       letter-spacing: 1.2px;

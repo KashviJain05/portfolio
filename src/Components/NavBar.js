@@ -4,7 +4,7 @@ import { motion } from 'framer-motion/dist/framer-motion'
 
 
 // menu items array
-const menuitems=["About","IIFI@2021","Featured","Projects","Work","Education","Contact"];
+const menuitems=["About","IIFI@2021","Projects","Work","Education","Contact"];
 
 // the navbar container which contains items
 const NavContainer= styled(motion.div)`
