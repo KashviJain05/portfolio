@@ -9,6 +9,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import About from './sections/About';
 import Banner from './sections/Banner';
 import IIFI from './sections/IIFI';
+import Projects from './sections/Projects';
 
 function App() {
   const containerRef = useRef(null);
@@ -39,11 +40,12 @@ function App() {
           watch={[]}
           containerRef={containerRef}
         >
-          <main data-scroll-container ref={containerRef}>
-            <Home/>
-            <About/>
-            <Banner/>
-            <IIFI/>
+          <main className='App' data-scroll-container ref={containerRef}>
+                <Home/>
+                <About/>
+                <Banner/>
+                <IIFI/>
+                <Projects/>
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>

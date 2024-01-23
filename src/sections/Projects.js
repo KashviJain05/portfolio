@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import IIFIDisp from "../Components/IIFIDisp";
+import ProjectsDisp from "../Components/ProjectsDisp";
 
-const Section=styled.section`
+const Section= styled.section `
     position:relative;
     min-height:100vh;
     overflow:hidden;
     background:rgb(8,7,11);
 `
 
-export default function IIFI(){
+export default function Projects(){
     return(
         <Section>
-            <IIFIDisp/>
+            <ProjectsDisp/>
         </Section>
     )
 }

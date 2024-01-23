@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .swiper_container {
     height: 50vh;
     padding: 2rem 0;
