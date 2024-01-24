@@ -29,8 +29,8 @@ const Container = styled.div`
         rgba(193, 72, 209, 1) 43%,
         rgba(168, 62, 206, 1) 90%
         );
-        border-bottom: 2px dashed #fff;
-        border-top: 2px dashed #fff;
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
         padding-bottom: 4px;
         margin-bottom:40px;
 
@@ -51,7 +51,7 @@ export default function ProjectDisp() {
     return (
         <>
             <Container >
-                <h2>~My Projects</h2>
+                <h2>~Projects</h2>
                 <ProjectDrawer/>
             </Container>
         </>

@@ -9,7 +9,7 @@ import Madhumalti from '../assets/images/Madhumalti.png';
 import drive from '../assets/images/Project Socials/google-drive.png'
 import youtube from '../assets/images/Project Socials/youtube.png'
 
-const ProjectContain= styled.div`
+const ProjectContain = styled.div`
     width:100%;
     display:flex;
     flex-direction:column;
@@ -24,12 +24,14 @@ const ProjectContain= styled.div`
         // box-shadow: 0px 2px 15px 10px rgb(34, 34, 79);
 
         h3{
+            width:60%;
             font-size: 3em;
             font-family: "Prata", serif;
             font-weight:bold;
             background-clip: text;
             color: transparent;
-            background-image: linear-gradient(45deg, rgba(111,109,255,1) 0%, rgba(110,229,176,1) 43%, rgba(98,238,123,1) 90%);
+            background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            
 
             @media (max-width: 60em) {
                 font-size: 2.5em;
@@ -47,7 +49,7 @@ const ProjectContain= styled.div`
     }
 `
 
-const DrawerSahab= styled.div`
+const DrawerSahab = styled.div`
     height:100%;
     background:rgb(8,7,11);
     box-shadow: 0px 2px 15px 10px rgb(34, 34, 79);
@@ -70,8 +72,8 @@ const DrawerSahab= styled.div`
           }
       
           @media (max-width: 40em) {
-            height:15%;
-            width:90%;
+            height:20%;
+            width:88%;
           }
     }
 
@@ -80,7 +82,7 @@ const DrawerSahab= styled.div`
         color:#fff;
         text-align:justify;
        padding:10px;
-       font-size:${props=>props.theme.fontlg};
+       font-size:${props => props.theme.fontlg};
   
       @media (max-width: 40em) {
         font-size: 1.10em;
@@ -88,7 +90,7 @@ const DrawerSahab= styled.div`
     }
  `
 
- const Social= styled.div`
+const Social = styled.div`
     width:100%;
     display:flex;
     align-items:center;
@@ -107,92 +109,96 @@ const DrawerSahab= styled.div`
     }
  `
 
- export default function ProjectDrawer() {
+export default function ProjectDrawer() {
     const [openMadhumalti, setOpenMadhumalti] = React.useState(false);
     const [openLayerShot, setOpenLayerShot] = React.useState(false);
-  
+
     const handleMadhumaltiClick = () => {
-      setOpenMadhumalti(true);
+        setOpenMadhumalti(true);
     };
-  
+
     const handleLayerShotClick = () => {
-      setOpenLayerShot(true);
+        setOpenLayerShot(true);
     };
-  
+
     return (
-      <ProjectContain>
-        <Box className="ProjectBox" sx={{ display: 'flex' }}>
-          <h3>1. Madhumalti</h3>
-          <Button
-            variant="outlined"
-            color="neutral"
-            onClick={handleMadhumaltiClick}
-            className="ProjectButton"
-          >
-            Know More
-          </Button>
-          <Drawer
-            open={openMadhumalti}
-            onClose={() => setOpenMadhumalti(false)}
-            anchor="right"
-            variant="outlined"
-            className="DrawerSahab"
-          >
-            <ModalClose />
-            <DrawerSahab>
-              <DialogTitle>
-                <h1>Madhumalti</h1>
-              </DialogTitle>
-              <img src={Madhumalti} alt="projectImg" />
-              <p>
-                ‘Madhumalti’ is a short film that explores the theme of love.
-                The film talks about Anandita who finds colors in her pale life
-                after meeting Tara. Here’s the link to the film.
-                <br />
-                <br />
-                Check it out !!
-              </p>
-              <Social>
-              <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="drive-pic" src={drive}/></a>
-            <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="youTube-pic" src={youtube}/></a>
-              </Social>
-            </DrawerSahab>
-          </Drawer>
-        </Box>
-        <Box className="ProjectBox" sx={{ display: 'flex' }}>
-          <h3>2. Layer Shot Ad</h3>
-          <Button
-            variant="outlined"
-            color="neutral"
-            onClick={handleLayerShotClick}
-            className="ProjectButton"
-          >
-            Know More
-          </Button>
-          <Drawer
-            open={openLayerShot}
-            onClose={() => setOpenLayerShot(false)}
-            anchor="right"
-            variant="outlined"
-            className="DrawerSahab"
-          >
-            <ModalClose />
-            <DrawerSahab>
-              <DialogTitle>
-                <h1>LayerShot AD</h1>
-              </DialogTitle>
-              <img src={Madhumalti} alt="projectImg" />
-              <p>
-                ‘Madhumalti’ is a short film that explores the theme of love.
-                The film talks about Anandita who finds colors in her pale life
-                after meeting Tara. Here’s the link to the film.
-                <br />
-                <br />
-                Check it out !!
-              </p>
-            </DrawerSahab>
-          </Drawer>
-        </Box>
-      </ProjectContain>
+        <ProjectContain>
+            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='2'>
+                <h3>1. Madhumalti</h3>
+                <Button
+                    variant="outlined"
+                    color="neutral"
+                    onClick={handleMadhumaltiClick}
+                    className="ProjectButton"
+                >
+                    Know More
+                </Button>
+                <Drawer
+                    open={openMadhumalti}
+                    onClose={() => setOpenMadhumalti(false)}
+                    anchor="right"
+                    variant="outlined"
+                    className="DrawerSahab"
+                >
+                    <ModalClose />
+                    <DrawerSahab>
+                        <DialogTitle>
+                            <h1>Madhumalti</h1>
+                        </DialogTitle>
+                        <img src={Madhumalti} alt="projectImg" />
+                        <p>
+                            ‘Madhumalti’ is a short film that explores the theme of love.
+                            The film talks about Anandita who finds colors in her pale life
+                            after meeting Tara. Here’s the link to the film.
+                            <br />
+                            <br />
+                            Check it out !!
+                        </p>
+                        <Social>
+                            <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="drive-pic" src={drive} /></a>
+                            <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="youTube-pic" src={youtube} /></a>
+                        </Social>
+                    </DrawerSahab>
+                </Drawer>
+            </Box>
+            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='2'>
+                <h3>2. Layer Shot Ad</h3>
+                <Button
+                    variant="outlined"
+                    color="neutral"
+                    onClick={handleLayerShotClick}
+                    className="ProjectButton"
+                >
+                    Know More
+                </Button>
+                <Drawer
+                    open={openLayerShot}
+                    onClose={() => setOpenLayerShot(false)}
+                    anchor="right"
+                    variant="outlined"
+                    className="DrawerSahab"
+                >
+                    <ModalClose />
+                    <DrawerSahab>
+                        <DialogTitle>
+                            <h1>LayerShot AD</h1>
+                        </DialogTitle>
+                        <img src={Madhumalti} alt="projectImg" />
+                        <p>
+                            ‘Madhumalti’ is a short film that explores the theme of love.
+                            The film talks about Anandita who finds colors in her pale life
+                            after meeting Tara. Here’s the link to the film.
+                            <br />
+                            <br />
+                            Check it out !!
+                        </p>
+                        <Social>
+                            <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="drive-pic" src={drive} /></a>
+                            <a href="https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view"><img alt="youTube-pic" src={youtube} /></a>
+                        </Social>
+                    </DrawerSahab>
+                </Drawer>
+            </Box>
+        </ProjectContain>
     );
-  }
+}

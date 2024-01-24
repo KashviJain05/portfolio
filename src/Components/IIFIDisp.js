@@ -32,8 +32,8 @@ const ContainerWrap = styled.div`
       rgba(193, 72, 209, 1) 43%,
       rgba(168, 62, 206, 1) 90%
     );
-    border-bottom: 2px dashed #fff;
-    border-top: 2px dashed #fff;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
     padding-bottom: 4px;
 
     @media (max-width: 60em) {
@@ -57,6 +57,7 @@ const ContentArea = styled.div`
   border-radius: 15px;
 
   p {
+    max-width:75%;
     padding: 20px;
     text-align: left;
     letter-spacing: 1.5px;
@@ -67,6 +68,7 @@ const ContentArea = styled.div`
 
     @media (max-width: 60em) {
       letter-spacing: 1.2px;
+      max-width:100%;
     }
   }
 `;
@@ -93,6 +95,10 @@ export default function IIFIDisp() {
            We gave many interviews which were
           broadcasted on news channels and got printed in the peacock edition of
           IFFI too.
+          <br/>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+
         </p>
       </ContentArea>
     </Container>

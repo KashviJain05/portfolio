@@ -34,8 +34,8 @@ const ContainerWrap= styled.div`
         background-clip: text;
         color: transparent;
         background-image:linear-gradient(45deg, rgba(219,217,255,1) 0%, rgba(193,72,209,1) 43%, rgba(168,62,206,1) 90%);
-        border-bottom: 2px dashed #fff;
-        border-top: 2px dashed #fff;
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
         padding-bottom: 4px;
 
         @media(max-width:60em){
@@ -77,7 +77,7 @@ const Profile= styled.div`
     
 
     @media(max-width: 60em){
-        width:90%;
+        width:100%;
     }
 
     img{
