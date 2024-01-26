@@ -33,7 +33,7 @@ const ContainerWrap = styled.div`
       rgba(168, 62, 206, 1) 90%
     );
     border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
+    // border-top: 2px solid #fff;
     padding-bottom: 4px;
 
     @media (max-width: 60em) {
@@ -44,7 +44,7 @@ const ContainerWrap = styled.div`
       font-size: ${(props) => props.theme.fontxl};
     }
   }
-`;
+`
 
 const ContentArea = styled.div`
   display: flex;
@@ -57,7 +57,7 @@ const ContentArea = styled.div`
   border-radius: 15px;
 
   p {
-    max-width:75%;
+    max-width:82%;
     padding: 20px;
     text-align: left;
     letter-spacing: 1.5px;

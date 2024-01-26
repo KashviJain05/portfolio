@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectsDisp from "../Components/ProjectsDisp";
+import EduDisp from "../Components/EduDisp";
 
 const Section= styled.section `
     position:relative;
@@ -9,10 +9,10 @@ const Section= styled.section `
     background:rgb(8,7,11);
 `
 
-export default function Projects(){
+export default function Education(){
     return(
         <Section>
-            <ProjectsDisp/>
+            <EduDisp/>
         </Section>
     )
 }

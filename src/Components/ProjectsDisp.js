@@ -30,7 +30,7 @@ const Container = styled.div`
         rgba(168, 62, 206, 1) 90%
         );
         border-bottom: 2px solid #fff;
-        border-top: 2px solid #fff;
+        // border-top: 2px solid #fff;
         padding-bottom: 4px;
         margin-bottom:40px;
 

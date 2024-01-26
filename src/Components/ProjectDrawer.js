@@ -46,6 +46,10 @@ const ProjectContain = styled.div`
             color:#fff;
             font-size:1em;
         }
+
+        .ProjectButton:hover{
+            color:black;
+        }
     }
 `
 
@@ -123,7 +127,7 @@ export default function ProjectDrawer() {
 
     return (
         <ProjectContain>
-            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='2'>
+            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
                 <h3>1. Madhumalti</h3>
                 <Button
                     variant="outlined"
@@ -161,7 +165,7 @@ export default function ProjectDrawer() {
                     </DrawerSahab>
                 </Drawer>
             </Box>
-            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='2'>
+            <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
                 <h3>2. Layer Shot Ad</h3>
                 <Button
                     variant="outlined"

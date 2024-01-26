@@ -1,6 +1,6 @@
 import React from "react";
+import WorkExpDisp from "../Components/WorkExpDisp";
 import styled from "styled-components";
-import ProjectsDisp from "../Components/ProjectsDisp";
 
 const Section= styled.section `
     position:relative;
@@ -9,10 +9,10 @@ const Section= styled.section `
     background:rgb(8,7,11);
 `
 
-export default function Projects(){
+export default function WorkExp(){
     return(
         <Section>
-            <ProjectsDisp/>
+            <WorkExpDisp/>
         </Section>
     )
 }
