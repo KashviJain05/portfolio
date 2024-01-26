@@ -136,11 +136,8 @@ export default function ProjectDrawer() {
     <ProjectContain>
       <Box
         className="ProjectBox"
-        data-scroll
-        data-scroll-speed="1"
-        data-scroll-delay="0.13"
       >
-        <Fade direction="up">
+        <Fade direction="up" triggerOnce>
           <div className="Fade">
             <h3>1. Madhumalti</h3>
             <Button
@@ -187,11 +184,8 @@ export default function ProjectDrawer() {
       </Box>
       <Box
         className="ProjectBox"
-        data-scroll
-        data-scroll-speed="1"
-        data-scroll-delay="0.13"
       >
-        <Fade direction="up">
+        <Fade direction="up" triggerOnce>
           <div className="Fade">
             <h3>2. Layer Shot Ad</h3>
             <Button

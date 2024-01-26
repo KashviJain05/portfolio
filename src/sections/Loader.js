@@ -12,9 +12,9 @@ const Container = styled.div`
     color: #fff;
     font-family: "Alata";
 
-    p{
+    span,p{
         margin-top:20px;
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .animation{
@@ -34,8 +34,8 @@ export default function Loader(){
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Loading Kashvi\'s Portfolio'],
-            typeSpeed: 50,
+            strings: ['......'],
+            typeSpeed: 200,
             backDelay:700,
             backSpeed:50,
             loop:false,
@@ -53,7 +53,8 @@ export default function Loader(){
     return(
         <Container>
             <iframe className="animation" src="https://lottie.host/embed/e99a16c1-4277-47ab-b645-89f28b31de8e/8vccV4do5C.json"></iframe>
-            <p ref={el}></p>
+            <span>Loading Kashvi's Portfolio</span>
+            <span ref={el}></span>
         </Container>
     )
 }

@@ -107,28 +107,28 @@ export default function EduDisp() {
       </ContainerWrap>
       <ConentArea>
         <Work>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
               <h2 className="Title">Title</h2>
               <span>Company</span>
             </WorkItem>
           </Slide>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
               <h2 className="Title">Title</h2>
               <span>Company</span>
             </WorkItem>
           </Slide>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
               <h2 className="Title">Title</h2>
               <span>Company</span>
             </WorkItem>
           </Slide>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
               <h2 className="Title">Title</h2>
