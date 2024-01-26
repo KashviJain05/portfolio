@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WorkIllus from '../assets/images/editing illus.png';
+import { Fade } from "react-reveal"; // Import the Fade component
 
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
@@ -112,26 +113,35 @@ export default function WorkExpDisp() {
       </ContainerWrap>
       <ConentArea>
           <Work>
-              <WorkItem>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
                 <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
-              <WorkItem>
+            </Fade>
+         
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
                 <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
-              <WorkItem>
-                <span>Year</span>
-                <h2>Title</h2>
-                <span>Company</span>
-              </WorkItem>
-              <WorkItem>
+            </Fade>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
                 <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
+            </Fade>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
+                <span>Year</span>
+                <h2 className="Title">Title</h2>
+                <span>Company</span>
+              </WorkItem>
+            </Fade>
           </Work>
           <WorkImg>
             <img src={WorkIllus} />

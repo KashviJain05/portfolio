@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import Madhumalti from '../assets/images/Madhumalti.png';
 import drive from '../assets/images/Project Socials/google-drive.png'
 import youtube from '../assets/images/Project Socials/youtube.png'
+import Zoom from 'react-reveal/Zoom';
 
 const ProjectContain = styled.div`
     width:100%;
@@ -128,6 +129,7 @@ export default function ProjectDrawer() {
     return (
         <ProjectContain>
             <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+                <Zoom>
                 <h3>1. Madhumalti</h3>
                 <Button
                     variant="outlined"
@@ -137,6 +139,7 @@ export default function ProjectDrawer() {
                 >
                     Know More
                 </Button>
+                </Zoom>
                 <Drawer
                     open={openMadhumalti}
                     onClose={() => setOpenMadhumalti(false)}
@@ -166,7 +169,8 @@ export default function ProjectDrawer() {
                 </Drawer>
             </Box>
             <Box className="ProjectBox" sx={{ display: 'flex' }} data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
-                <h3>2. Layer Shot Ad</h3>
+               <Zoom>
+               <h3>2. Layer Shot Ad</h3>
                 <Button
                     variant="outlined"
                     color="neutral"
@@ -175,6 +179,7 @@ export default function ProjectDrawer() {
                 >
                     Know More
                 </Button>
+               </Zoom>
                 <Drawer
                     open={openLayerShot}
                     onClose={() => setOpenLayerShot(false)}

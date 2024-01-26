@@ -21,6 +21,11 @@ const Container = styled.div`
         border:none;
         height:350px;
         width:350px;
+
+        @media(max-width:60em){
+            height:250px;
+            width:250px;
+        }
     }
 `
 
@@ -29,7 +34,7 @@ export default function Loader(){
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['- Selecting Raw clips....','- Editing...','- Here we go' ],
+            strings: ['- Selecting Raw clips...','- Editing...','- Here we go 🚀' ],
             typeSpeed: 40,
             backDelay:700,
             backSpeed:50,

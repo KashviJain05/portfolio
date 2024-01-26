@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import EduIllus from '../assets/images/study illus.png';
+import { Fade } from "react-reveal";
+
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;
@@ -111,32 +113,42 @@ export default function EduDisp() {
         <h2>~Education</h2>
       </ContainerWrap>
       <ConentArea>
-     
-          <Work>
-              <WorkItem>
+      <Work>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
-                <h2>Title</h2>
+                <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
-              <WorkItem>
+            </Fade>
+         
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
-                <h2>Title</h2>
+                <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
-              <WorkItem>
+            </Fade>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
-                <h2>Title</h2>
+                <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
-              <WorkItem>
+            </Fade>
+            <Fade bottom cascade>
+            <WorkItem className="fade-in">
                 <span>Year</span>
-                <h2>Title</h2>
+                <h2 className="Title">Title</h2>
                 <span>Company</span>
               </WorkItem>
+            </Fade>
           </Work>
+          <Fade bottom cascade>
           <WorkImg >
             <img src={EduIllus}/>
           </WorkImg>
+          </Fade>
       </ConentArea>
     </Container>
   );
