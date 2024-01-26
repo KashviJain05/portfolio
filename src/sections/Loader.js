@@ -34,8 +34,8 @@ export default function Loader(){
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['- Selecting Raw clips...','- Editing...','- Here we go 🚀' ],
-            typeSpeed: 40,
+            strings: ['Loading Kashvi\'s Portfolio'],
+            typeSpeed: 50,
             backDelay:700,
             backSpeed:50,
             loop:false,

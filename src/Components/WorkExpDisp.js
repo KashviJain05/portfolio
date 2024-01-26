@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import WorkIllus from '../assets/images/editing illus.png';
-import { Fade } from "react-reveal"; // Import the Fade component
+import WorkIllus from "../assets/images/editing illus.png";
+import { Slide } from "react-awesome-reveal";
 
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
@@ -48,7 +48,7 @@ const ContainerWrap = styled.div`
 `;
 
 const ConentArea = styled.div`
-  display:flex;
+  display: flex;
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -61,49 +61,43 @@ const ConentArea = styled.div`
   }
 `;
 
-const Work= styled.div`
-  max-height:60%;
-  max-width:50%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+const Work = styled.div`
+  max-height: 60%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
+const WorkItem = styled.div`
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
 
-`
-
-const WorkItem= styled.div`
-  margin-bottom:30px;
-  color:#fff;
-  position:relative;
-
-  span{
-    font-size:${props=>props.theme.fontlg};
+  span {
+    font-size: ${(props) => props.theme.fontlg};
   }
 
-  h2{
-    margin-top:3px;
-    margin-bottom:3px;
-    font-size:${props=>props.theme.fontxl};
-    color:#00ffdc;
-    trasition:1s ease-in-out;
+  h2 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: ${(props) => props.theme.fontxl};
+    color: #00ffdc;
+    trasition: 1s ease-in-out;
   }
+`;
 
-
- 
-`
-
-const WorkImg= styled.div`
-  max-width:50%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-   img{
-    height:400px;
-    width:400px;
-   }
-`
-
+const WorkImg = styled.div`
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 400px;
+    width: 400px;
+  }
+`;
 
 export default function WorkExpDisp() {
   return (
@@ -112,40 +106,39 @@ export default function WorkExpDisp() {
         <h2>~Work Experience</h2>
       </ContainerWrap>
       <ConentArea>
-          <Work>
-            <Fade bottom cascade>
+        <Work>
+          <Slide direction="left">
             <WorkItem className="fade-in">
-                <span>Year</span>
-                <h2 className="Title">Title</h2>
-                <span>Company</span>
-              </WorkItem>
-            </Fade>
-         
-            <Fade bottom cascade>
+              <span>Year</span>
+              <h2 className="Title">Title</h2>
+              <span>Company</span>
+            </WorkItem>
+          </Slide>
+          <Slide direction="left">
             <WorkItem className="fade-in">
-                <span>Year</span>
-                <h2 className="Title">Title</h2>
-                <span>Company</span>
-              </WorkItem>
-            </Fade>
-            <Fade bottom cascade>
+              <span>Year</span>
+              <h2 className="Title">Title</h2>
+              <span>Company</span>
+            </WorkItem>
+          </Slide>
+          <Slide direction="left">
             <WorkItem className="fade-in">
-                <span>Year</span>
-                <h2 className="Title">Title</h2>
-                <span>Company</span>
-              </WorkItem>
-            </Fade>
-            <Fade bottom cascade>
+              <span>Year</span>
+              <h2 className="Title">Title</h2>
+              <span>Company</span>
+            </WorkItem>
+          </Slide>
+          <Slide direction="left">
             <WorkItem className="fade-in">
-                <span>Year</span>
-                <h2 className="Title">Title</h2>
-                <span>Company</span>
-              </WorkItem>
-            </Fade>
-          </Work>
-          <WorkImg>
-            <img src={WorkIllus} />
-          </WorkImg>
+              <span>Year</span>
+              <h2 className="Title">Title</h2>
+              <span>Company</span>
+            </WorkItem>
+          </Slide>
+        </Work>
+        <WorkImg>
+          <img src={WorkIllus} />
+        </WorkImg>
       </ConentArea>
     </Container>
   );
