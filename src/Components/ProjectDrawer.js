@@ -24,7 +24,7 @@ const ProjectContain = styled.div`
     .Fade {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 
       h3 {

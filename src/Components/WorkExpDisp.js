@@ -85,6 +85,15 @@ const WorkItem = styled.div`
     font-size: ${(props) => props.theme.fontxl};
     color: #00ffdc;
     trasition: 1s ease-in-out;
+
+    @media(max-width:90em){
+      font-size:1.75em;
+    }
+
+    @media(max-width:60em){
+      font-size:1.50em;
+    }
+
   }
 
   &::before{
@@ -107,7 +116,14 @@ const WorkImg = styled.div`
   img {
     height: 450px;
     width: 450px;
+
+    @media(max-width:60em){
+      height:350px;
+      width:350px;
+    }
   }
+
+  
 `;
 
 export default function WorkExpDisp() {
