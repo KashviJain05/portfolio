@@ -138,7 +138,7 @@ export default function ProjectDrawer() {
         className="ProjectBox"
       >
         <Fade direction="up" triggerOnce>
-          <div className="Fade">
+          <div className="Fade" data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
             <h3>1. Madhumalti</h3>
             <Button
               variant="outlined"
@@ -186,7 +186,7 @@ export default function ProjectDrawer() {
         className="ProjectBox"
       >
         <Fade direction="up" triggerOnce>
-          <div className="Fade">
+          <div className="Fade" data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
             <h3>2. Layer Shot Ad</h3>
             <Button
               variant="outlined"

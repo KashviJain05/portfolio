@@ -86,6 +86,17 @@ const WorkItem = styled.div`
     color: #00ffdc;
     trasition: 1s ease-in-out;
   }
+
+  &::before{
+    position:absolute;
+    content:"";
+    height:17px;
+    width:17px;
+    background-color: #00ffdc;
+    left:-80px;
+    top:45px;
+    border-radius:50%;
+  }
 `;
 
 const WorkImg = styled.div`
@@ -94,8 +105,8 @@ const WorkImg = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
   }
 `;
 
@@ -106,7 +117,7 @@ export default function EduDisp() {
         <h2>~Education</h2>
       </ContainerWrap>
       <ConentArea>
-        <Work>
+        <Work data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
           <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
@@ -136,7 +147,7 @@ export default function EduDisp() {
             </WorkItem>
           </Slide>
         </Work>
-        <WorkImg>
+        <WorkImg data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
           <img src={EduIllus} />
         </WorkImg>
       </ConentArea>
