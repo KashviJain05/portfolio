@@ -52,7 +52,7 @@ export default function Loader(){
 
     return(
         <Container>
-            <iframe className="animation" src="https://lottie.host/embed/e99a16c1-4277-47ab-b645-89f28b31de8e/8vccV4do5C.json"></iframe>
+           <iframe className="animation" src="https://lottie.host/embed/e99a16c1-4277-47ab-b645-89f28b31de8e/8vccV4do5C.json" loading="lazy"></iframe>
             <span>Loading Kashvi's Portfolio</span>
             <span ref={el}></span>
         </Container>

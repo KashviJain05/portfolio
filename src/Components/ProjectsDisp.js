@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectDrawer from "./ProjectDrawer";
+import Card from "./ProjectCard1";
 
 const Container = styled.div`
     min-height:100vh;
@@ -45,6 +46,13 @@ const Container = styled.div`
 
 `
 
+const CardContain=styled.div`
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+`
+
 
 
 export default function ProjectDisp() {
@@ -52,7 +60,20 @@ export default function ProjectDisp() {
         <>
             <Container >
                 <h2>~Projects</h2>
-                <ProjectDrawer/>
+                {/* <ProjectDrawer/> */}
+                <CardContain>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </CardContain>
             </Container>
         </>
     )

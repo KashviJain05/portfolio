@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
@@ -44,9 +44,9 @@ function App() {
           containerRef={containerRef}
         >
           <main className='App' data-scroll-container ref={containerRef}>
-            {loaded ? (
+            {/* {loaded ? (
               <>
-              
+               */}
                 <Home />
                 <About />
                 <Banner />
@@ -54,10 +54,10 @@ function App() {
                 <Projects />
                 <WorkExp />
                 <Education />
-              </>
+              {/* </>
             ) : (
               <Loader />
-            )}
+            )} */}
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>

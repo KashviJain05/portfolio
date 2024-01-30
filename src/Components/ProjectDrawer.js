@@ -26,6 +26,7 @@ const ProjectContain = styled.div`
       display: flex;
       justify-content: space-around;
       align-items: center;
+      border-radius: 30px;
 
       h3 {
         width: 60%;
@@ -52,6 +53,7 @@ const ProjectContain = styled.div`
       .ProjectButton {
         color: #fff;
         font-size: 1em;
+        transition:0.5s ease-in-out;
       }
 
       .ProjectButton:hover {
