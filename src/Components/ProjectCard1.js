@@ -106,18 +106,16 @@ const Social = styled.div`
   }
 `;
 
-const Card = () => {
+const Card = (props) => {
   return (
     <Fade direction="up" triggerOnce>
       <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
-        <img src={Madhumalti1} />
+        <img src={props.detail.imgAdd} />
         <CardContent className="CardContent">
-          <CardTitle className="CardTitle">Madhumalti</CardTitle>
+          <CardTitle className="CardTitle">{props.detail.name}</CardTitle>
           <CardSubtitle className="CardSub">Click to know more</CardSubtitle>
           <CardDescription className="CardDescription">
-            ‘Madhumalti’ is a short film that explores the theme of love. The
-            film talks about Anandita who finds colors in her pale life after
-            meeting Tara. Here’s the link to the film.
+           {props.detail.content}
             <br />
             <br />
             Check it out !!

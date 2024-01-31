@@ -36,9 +36,11 @@ function App() {
             multiplier:1,
             tablet: {
               smooth: true,
+              multiplier:1
             },
             smartphone: {
               smooth: true,
+              multiplier:1
             },
           }}
           watch={[]}
