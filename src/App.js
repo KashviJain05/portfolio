@@ -33,6 +33,7 @@ function App() {
         <LocomotiveScrollProvider
           options={{
             smooth: true,
+            multiplier:1,
             tablet: {
               smooth: true,
             },
