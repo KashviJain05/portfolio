@@ -1,7 +1,7 @@
 // importing the libraries
 import React from "react";
 import styled from "styled-components";
-import imgAdd from "../assets/images/ProfilePic.jpg";
+import imgAdd from "../assets/images/profile-pic (1).png";
 import AnimImg from "../assets/images/Animation Image.png"
 import gsap from "gsap";
 import { useEffect } from "react"; 
@@ -81,8 +81,8 @@ const Profile= styled.div`
     }
 
     img{
-        height:155px;
-        width:155px;
+        height:200px;
+        width:200px;
         border-radius:50%
     }
 

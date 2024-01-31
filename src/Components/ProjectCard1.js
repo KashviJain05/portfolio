@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Madhumalti1 from "../assets/images/Madhumalti.png";
 import drive from "../assets/images/Project Socials/google-drive.png";
 import youtube from "../assets/images/Project Socials/youtube.png";
 import { Fade } from "react-awesome-reveal";
@@ -34,7 +33,8 @@ const CardContainer = styled.article`
 
   &:hover .CardTitle {
     font-size: 1.55em;
-    transform: translateX(27%);
+    // transform: translateX(27%);
+    margin-left:5px;
   }
 
   &:hover .CardSub {
