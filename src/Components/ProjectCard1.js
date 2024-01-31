@@ -34,7 +34,7 @@ const CardContainer = styled.article`
 
   &:hover .CardTitle {
     font-size: 1.55em;
-    text-align:center;
+    transform: translateX(27%);
   }
 
   &:hover .CardSub {
@@ -44,7 +44,7 @@ const CardContainer = styled.article`
   &:hover .CardDescription {
     opacity: 1;
     transition-delay: 0.25s;
-    margin-top: 8px;
+    margin: 10px;
   }
 `;
 
