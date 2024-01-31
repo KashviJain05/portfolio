@@ -23,7 +23,7 @@ const CardContainer = styled.article`
   }
 
   img {
-    height: 100%;
+    height: 75%;
     width: 100%;
   }
 
