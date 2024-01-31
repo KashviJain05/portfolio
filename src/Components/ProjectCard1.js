@@ -33,7 +33,8 @@ const CardContainer = styled.article`
   }
 
   &:hover .CardTitle {
-    font-size: 1.65em;
+    font-size: 1.55em;
+    text-align:center;
   }
 
   &:hover .CardSub {
@@ -56,14 +57,12 @@ const CardContent = styled.div`
   background: rgb(8, 7, 11);
   border-top-left-radius: 20px;
   transform: translateY(150px);
-  transition: transform 0.25s;
+  transition: transform 0.50s;
 `;
 
-const CardTitle = styled.span`
+const CardTitle = styled.p`
   font-weight: bold;
-  color: #131313;
-  line-height: 15px;
-  font-size: ${(props) => props.theme.fontxxl};
+  font-size: ${(props) => props.theme.fontxl};
   transition: 0.5s ease-in-out;
   background-clip: text;
   color: transparent;
