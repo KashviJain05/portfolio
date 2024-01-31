@@ -33,7 +33,7 @@ const ContainerWrap= styled.div`
         font-size:${props=>props.theme.fontxxxl};
         background-clip: text;
         color: transparent;
-        background-image:linear-gradient(45deg, rgba(219,217,255,1) 0%, rgba(193,72,209,1) 43%, rgba(168,62,206,1) 90%);
+        background-image:radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
         border-bottom: 2px solid #fff;
         // border-top: 2px solid #fff;
         padding-bottom: 4px;
