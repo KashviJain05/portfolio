@@ -73,8 +73,12 @@ const ContentArea = styled.div`
 `;
 
 const Contact = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 50px;
   width: 80%;
+  min-height:70vh;
   h3 {
     text-align: center;
     font-size: ${(props) => props.theme.fontxl};
@@ -88,7 +92,19 @@ const Contact = styled.div`
   }
 `;
 
+const Social= styled.div`
+  width:45%;
+  height:100%;
 
+  ul{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    min-height:60vh;
+
+  }
+`
 
 export default function ContactDisp() {
   return (
@@ -104,7 +120,6 @@ export default function ContactDisp() {
           </p>
 
           <Contact>
-            <h3>• Socials :-</h3>
           </Contact>
         </ContentArea>
       </ContainerWrap>
