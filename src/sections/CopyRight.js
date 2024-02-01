@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer = styled.footer`
   position: relative;
-  min-height: 30vh;
+  min-height: 15vh;
   overflow: hidden;
   background: rgb(8, 7, 11);
   display: flex;
@@ -16,8 +16,7 @@ const Footer = styled.footer`
   border-top: 2px dashed #fff;
 
   p{
-    margin-top:20px;
-    font-size:1.3rem;
+    font-size:1.1rem;
   }
 `;
 
@@ -28,7 +27,6 @@ export default function CopyRight() {
         <p>© KASHVI JAIN</p>
         <p>Made ❤️ with by Sumit Grover</p>
       </Footer>
-      <br/>
     </>
   );
 }
