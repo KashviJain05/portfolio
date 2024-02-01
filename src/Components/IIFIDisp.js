@@ -87,7 +87,7 @@ export default function IIFIDisp() {
 
       <ContentArea>
         {/* <IFFIGallery data-scroll data-scroll-speed="2" /> */}
-        <GalleryWraaper>
+        <GalleryWraaper data-scroll data-scroll-speed="2">
           <IFFIGallery2 />
         </GalleryWraaper>
 
