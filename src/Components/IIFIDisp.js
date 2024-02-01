@@ -74,7 +74,7 @@ const ContentArea = styled.div`
 
 const GalleryWraaper = styled.div`
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
 `;
 
