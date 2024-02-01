@@ -171,7 +171,7 @@ export default function ContactDisp() {
       <ContainerWrap>
         <h2>~Reach Out</h2>
         <ContentArea>
-          <Contact>
+          <Contact data-scroll data-scroll-speed='2'>
             <p>
               <Fade direction="left" triggerOnce>
                 I'm open to collaborations, freelance opportunities, and new
@@ -181,7 +181,7 @@ export default function ContactDisp() {
               </Fade>
             </p>
           </Contact>
-          <Social>
+          <Social data-scroll data-scroll-speed='2'>
             <ul>
               <li>
                 <Fade direction="right" triggerOnce>

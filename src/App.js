@@ -14,6 +14,7 @@ import WorkExp from "./sections/WorkExp";
 import Education from "./sections/Education";
 import Loader from "./sections/Loader";
 import Contact from "./sections/Contact";
+import CopyRight from "./sections/CopyRight";
 
 function App() {
   const containerRef = useRef(null);
@@ -58,6 +59,7 @@ function App() {
                 <WorkExp />
                 <Education />
                 <Contact/>
+                <CopyRight/>
               </>
             ) : (
               <Loader />
