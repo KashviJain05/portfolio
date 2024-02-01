@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import IFFIGallery from "./IIFIGallery";
 import IFFIGallery2 from "./IFFIGallery2";
-
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;

@@ -66,10 +66,10 @@ const ImageGroup = styled.div`
   display: grid;
   place-items: center;
   width: 500px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media (max-width: 90em) {
     width: 400px;

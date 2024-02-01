@@ -22,8 +22,10 @@ const CardContainer = styled.article`
   }
 
   img {
-    height: 75%;
+    height: 60%;
     width: 100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
   }
 
   &:hover .CardContent {
