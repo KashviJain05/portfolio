@@ -21,7 +21,7 @@ const CardContainer = styled.article`
     height: 300px;
   }
 
-  @media (max-width: 40em) {
+  @media (max-width: 20em) {
     width: 250px;
     height: 300px;
   }
@@ -77,6 +77,10 @@ const CardTitle = styled.p`
 
   @media (max-width: 60em) {
     font-size: ${(props) => props.theme.fontxl};
+  }
+
+  @media (max-width: 20em) {
+    font-size: ${(props) => props.theme.fontlg};
   }
 `;
 

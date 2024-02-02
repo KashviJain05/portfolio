@@ -156,7 +156,7 @@ const AnimationContent = styled.div`
     width: 90%;
   }
 
-  @media (max-width: 60em) {
+  @media (max-width: 20em) {
     width: 100%;
     font-size: 18px;
   }
