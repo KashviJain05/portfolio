@@ -65,18 +65,18 @@ const Image = styled.img`
 const ImageGroup = styled.div`
   display: grid;
   place-items: center;
-  width: 500px;
+  width: 600px;
   padding-top: 35px;
   padding-bottom: 35px;
   padding-right: 15px;
   padding-left: 15px;
 
   @media (max-width: 90em) {
-    width: 400px;
+    width: 450px;
   }
 
   @media (max-width: 60em) {
-    width: 300px;
+    width: 350px;
   }
 `;
 

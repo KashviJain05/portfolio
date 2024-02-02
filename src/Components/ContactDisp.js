@@ -165,23 +165,26 @@ const Mail = styled.div`
   }
 `;
 
+const Github = styled.div`
+`;
 export default function ContactDisp() {
   return (
     <Container>
       <ContainerWrap>
         <h2>~Reach Out</h2>
         <ContentArea>
-          <Contact data-scroll data-scroll-speed='2'>
+          <Contact data-scroll data-scroll-speed="2">
             <p>
               <Fade direction="left" triggerOnce>
-                I'm open to collaborations, freelance opportunities, and new
-                creative challenges. Don't hesitate to connect and let's explore
-                the possibilities together. Your project deserves the touch of a
-                passionate video editor, and I'm excited to be a part of it. 👋🏼
+                I'm open to collaborations, freelance and fulltime
+                opportunities, and new creative challenges. Don't hesitate to
+                connect and let's explore the possibilities together. Your
+                project deserves the touch of a passionate video editor, and I'm
+                excited to be a part of it. 👋🏼
               </Fade>
             </p>
           </Contact>
-          <Social data-scroll data-scroll-speed='2'>
+          <Social data-scroll data-scroll-speed="2">
             <ul>
               <li>
                 <Fade direction="right" triggerOnce>
@@ -246,6 +249,19 @@ export default function ContactDisp() {
                     </Icon>
                     <Name>test@gmail.com</Name>
                   </Mail>
+                </Fade>
+              </li>
+              <li>
+                <Fade direction="right" triggerOnce>
+                  <Github className="Social">
+                    <Icon>
+                      <i
+                        class="fa-brands fa-github"
+                        style={{ color: "#ffffff" }}
+                      ></i>
+                    </Icon>
+                    <Name>Github</Name>
+                  </Github>
                 </Fade>
               </li>
             </ul>

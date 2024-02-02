@@ -25,7 +25,7 @@ export default function CopyRight() {
     <>
       <Footer>
         <p>© KASHVI JAIN</p>
-        <p>Made ❤️ with by Sumit Grover</p>
+        <p>Made with ❤️ by Sumit Grover</p>
       </Footer>
     </>
   );
