@@ -27,7 +27,11 @@ const ContainerWrap = styled.div`
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
-    background-image:radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-image: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
     border-bottom: 2px solid #fff;
     // border-top: 2px solid #fff;
     padding-bottom: 4px;
@@ -81,24 +85,24 @@ const WorkItem = styled.div`
     color: #00ffdc;
     trasition: 1s ease-in-out;
 
-    @media(max-width:90em){
-      font-size:1.75em;
+    @media (max-width: 90em) {
+      font-size: 1.75em;
     }
 
-    @media(max-width:60em){
-      font-size:1.50em;
+    @media (max-width: 60em) {
+      font-size: 1.5em;
     }
   }
 
-  &::before{
-    position:absolute;
-    content:"";
-    height:17px;
-    width:17px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
     background-color: #00ffdc;
-    left:-80px;
-    top:45px;
-    border-radius:50%;
+    left: -80px;
+    top: 45px;
+    border-radius: 50%;
   }
 `;
 
@@ -111,23 +115,21 @@ const WorkImg = styled.div`
     height: 450px;
     width: 450px;
 
-    @media(max-width:60em){
-      height:350px;
-      width:350px;
+    @media (max-width: 60em) {
+      height: 350px;
+      width: 350px;
     }
   }
-
-  
 `;
 
 export default function EduDisp() {
   return (
     <Container>
-      <ContainerWrap>
+      <ContainerWrap>     
         <h2>~Education</h2>
       </ContainerWrap>
       <ConentArea>
-        <Work data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+        <Work data-scroll data-scroll-speed="1" data-scroll-delay="0.13">
           <Slide direction="left" triggerOnce>
             <WorkItem className="fade-in">
               <span>Year</span>
@@ -157,7 +159,7 @@ export default function EduDisp() {
             </WorkItem>
           </Slide>
         </Work>
-        <WorkImg data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+        <WorkImg data-scroll data-scroll-speed="1" data-scroll-delay="0.13">
           <img src={EduIllus} />
         </WorkImg>
       </ConentArea>
