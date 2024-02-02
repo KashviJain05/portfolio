@@ -35,14 +35,24 @@ function App() {
         <LocomotiveScrollProvider
           options={{
             smooth: true,
-            multiplier:1,
+            multiplier: 1,
             tablet: {
               smooth: true,
-              multiplier:1
+              multiplier: 0.7, // Adjust the multiplier for smoother scrolling on tablet
+              breakpoint: 1024, // You can adjust this breakpoint according to your design
+              direction: 'vertical', // Set the direction for tablet scrolling
+              touchMultiplier: 2, // Adjust the touch sensitivity on tablet
+              inertia: 0.8, // Adjust the inertia for tablet
+              ease: 0.07, // Adjust the easing for tablet
             },
             smartphone: {
               smooth: true,
-              multiplier:1
+              multiplier: 0.5, // Adjust the multiplier for smoother scrolling on smartphone
+              breakpoint: 480, // You can adjust this breakpoint according to your design
+              direction: 'vertical', // Set the direction for smartphone scrolling
+              touchMultiplier: 2, // Adjust the touch sensitivity on smartphone
+              inertia: 0.6, // Adjust the inertia for smartphone
+              ease: 0.1, // Adjust the easing for smartphone
             },
           }}
           watch={[]}
@@ -58,8 +68,8 @@ function App() {
                 <Projects />
                 <WorkExp />
                 <Education />
-                <Contact/>
-                <CopyRight/>
+                <Contact />
+                <CopyRight />
               </>
             ) : (
               <Loader />
