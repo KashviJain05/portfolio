@@ -13,11 +13,16 @@ const CardContainer = styled.article`
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
-  margin: 30px;
+  margin-top:20px;
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
 
   @media (max-width: 60em) {
     width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 40em) {
+    width: 250px;
     height: 300px;
   }
 

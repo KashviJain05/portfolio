@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-    // min-height:50vh;
+    min-height:50vh;
     width: 100vw;
     margin: 0 auto;
     background:rgb(8,7,11);

@@ -155,6 +155,11 @@ const AnimationContent = styled.div`
   @media (max-width: 60em) {
     width: 90%;
   }
+
+  @media (max-width: 60em) {
+    width: 100%;
+    font-size: 18px;
+  }
 `;
 
 // our about display component
