@@ -5,7 +5,8 @@ import Drawer from "@mui/joy/Drawer";
 import DialogTitle from "@mui/joy/DialogTitle";
 import ModalClose from "@mui/joy/ModalClose";
 import styled from "styled-components";
-import Madhumalti from "../assets/images/Madhumalti.png";
+import Madhumalti from "../assets/images/ProjectImg/Madhumalti1.png";
+import LayerShot from '../assets/images/ProjectImg/LayerShot.png'
 import drive from "../assets/images/Project Socials/google-drive.png";
 import youtube from "../assets/images/Project Socials/youtube.png";
 import { Fade } from "react-awesome-reveal";
@@ -35,8 +36,8 @@ const ProjectContain = styled.div`
         font-weight: bold;
         background-clip: text;
         color: transparent;
-        background-image: linear-gradient(
-          90deg,
+        background-image: radial-gradient(
+          circle,
           rgba(238, 174, 202, 1) 0%,
           rgba(148, 187, 233, 1) 100%
         );
@@ -53,7 +54,7 @@ const ProjectContain = styled.div`
       .ProjectButton {
         color: #fff;
         font-size: 1em;
-        transition:0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
       }
 
       .ProjectButton:hover {
@@ -136,11 +137,14 @@ export default function ProjectDrawer() {
 
   return (
     <ProjectContain>
-      <Box
-        className="ProjectBox"
-      >
+      <Box className="ProjectBox">
         <Fade direction="up" triggerOnce>
-          <div className="Fade" data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+          <div
+            className="Fade"
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-delay="0.13"
+          >
             <h3>1. Madhumalti</h3>
             <Button
               variant="outlined"
@@ -184,11 +188,14 @@ export default function ProjectDrawer() {
           </DrawerSahab>
         </Drawer>
       </Box>
-      <Box
-        className="ProjectBox"
-      >
+      <Box className="ProjectBox">
         <Fade direction="up" triggerOnce>
-          <div className="Fade" data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+          <div
+            className="Fade"
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-delay="0.13"
+          >
             <h3>2. Layer Shot Ad</h3>
             <Button
               variant="outlined"
@@ -212,11 +219,10 @@ export default function ProjectDrawer() {
             <DialogTitle>
               <h1>LayerShot AD</h1>
             </DialogTitle>
-            <img src={Madhumalti} alt="projectImg" />
+            <img src={LayerShot} alt="projectImg" />
             <p>
-              ‘Madhumalti’ is a short film that explores the theme of love. The
-              film talks about Anandita who finds colors in her pale life after
-              meeting Tara. Here’s the link to the film.
+              It is an Advertisement for the Layer Shot deodorant, which is
+              packed in a bullet-shaped bottle to attract customers.
               <br />
               <br />
               Check it out !!

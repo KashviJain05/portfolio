@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "./ProjectCard1";
+import ProjectDrawer from "./ProjectDrawer";
 import Madhumalti1 from "../assets/images/ProjectImg/Madhumalti1.png";
 import LayerShot from '../assets/images/ProjectImg/LayerShot.png'
 import InDino from '../assets/images/ProjectImg/InDino.jpg'
@@ -94,14 +95,14 @@ export default function ProjectDisp() {
     <>
       <Container>
         <h2>~Projects</h2>
-        {/* <ProjectDrawer/> */}
-        <CardContain>
+        <ProjectDrawer/>
+        {/* <CardContain>
          {details.map((detail,index)=>{
           return(
             <Card detail={detail} key={index}/>
          )
          })}
-        </CardContain>
+        </CardContain> */}
       </Container>
     </>
   );
