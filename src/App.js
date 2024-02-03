@@ -42,8 +42,8 @@ function App() {
               breakpoint: 1024, // You can adjust this breakpoint according to your design
               direction: 'vertical', // Set the direction for smartphone scrolling
               touchMultiplier: 4, // Adjust the touch sensitivity on smartphone
-              inertia: 0.1, // Adjust the inertia for smartphone
-              ease: 0.2, // Adjust the easing for smartphone
+              inertia: 0.02, // Adjust the inertia for smartphone
+              ease: 0.1, // Adjust the easing for smartphone
             },
             smartphone: {
               smooth: true,
@@ -51,8 +51,8 @@ function App() {
               breakpoint: 480, // You can adjust this breakpoint according to your design
               direction: 'vertical', // Set the direction for smartphone scrolling
               touchMultiplier: 4, // Adjust the touch sensitivity on smartphone
-              inertia: 0.1, // Adjust the inertia for smartphone
-              ease: 0.2, // Adjust the easing for smartphone
+              inertia: 0.02, // Adjust the inertia for smartphone
+              ease: 0.1, // Adjust the easing for smartphone
             },
           }}
           watch={[]}
