@@ -95,14 +95,14 @@ export default function ProjectDisp() {
     <>
       <Container>
         <h2>~Projects</h2>
-        <ProjectDrawer/>
-        {/* <CardContain>
+        {/* <ProjectDrawer/> */}
+        <CardContain>
          {details.map((detail,index)=>{
           return(
             <Card detail={detail} key={index}/>
          )
          })}
-        </CardContain> */}
+        </CardContain>
       </Container>
     </>
   );
