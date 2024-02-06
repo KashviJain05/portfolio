@@ -187,7 +187,7 @@ export default function ContactDisp() {
           <Social data-scroll data-scroll-speed="2">
             <ul>
               <li>
-                <Fade direction="right" triggerOnce>
+                <Fade direction="right" triggerOnce cascade>
                   <Linkedin className="Social">
                     <Icon>
                       <i

@@ -3,10 +3,13 @@ import styled from "styled-components";
 import Card from "./ProjectCard1";
 import ProjectDrawer from "./ProjectDrawer";
 import Madhumalti1 from "../assets/images/ProjectImg/Madhumalti1.png";
-import LayerShot from '../assets/images/ProjectImg/LayerShot.png'
-import InDino from '../assets/images/ProjectImg/InDino.jpg'
-import BurgerClub from '../assets/images/ProjectImg/BurgerClub.png'
-import CaterPillarBlues from '../assets/images/ProjectImg/CaterPillarBlues.png'
+import LayerShot from '../assets/images/ProjectImg/LayerShot.png';
+import InDino from '../assets/images/ProjectImg/InDino.jpg';
+import BurgerClub from '../assets/images/ProjectImg/BurgerClub.png';
+import CaterPillarBlues from '../assets/images/ProjectImg/CaterPillarBlues.png';
+import TaaziSukhiMitti from '../assets/images/ProjectImg/TaaziSukhiMitti.png';
+import { Zoom } from "react-awesome-reveal";
+
 
 const details=[
   {
@@ -14,35 +17,42 @@ const details=[
     imgAdd:Madhumalti1,
     content:'‘Madhumalti’ is a short film that explores the theme of love. The film talks about Anandita who finds colors in her pale life after meeting Tara. Here’s the link to the film.',
     youtube:'',
-    drive:'https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view'
+    drive:'https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view',
   },
   {
     name:'LayerShot Ad',
     imgAdd:LayerShot,
     content:'It is an Advertisement for the Layer Shot deodorant, which is packed in a bullet-shaped bottle to attract customers.',
     youtube:'',
-    drive:''
+    drive:'',
   },
   {
     name:'In Dino MV',
     imgAdd:InDino,
     content:'‘In Dino’ is a Music Cover Video, using the song ‘In Dino’ from the film ‘Life in a Metro’. It is my first music video. Inspired by the song itself, it shows the life of people in metropolitan cities and how they cross paths with each other.',
     youtube:'',
-    drive:''
+    drive:'',
   },
   {
     name:'BurgerClub AD',
     imgAdd:BurgerClub,
     content:'It is an Advertisement for the Burger Club Café, which serves delicious burgers made of fresh buns prepared in-house. ',
     youtube:'',
-    drive:''
+    drive:'',
   },
   {
     name:'CaterPillar Blues',
     imgAdd:CaterPillarBlues,
     content:'‘Caterpillar Blues’ is a short film, on which I worked as a sound designer. The film portrays a man struggling to adjust to a chair. The film is simple, yet it touches different subtexts within it. ',
     youtube:'',
-    drive:''
+    drive:'',
+  },
+  {
+    name:'Taazi Sukhi Mitti',
+    imgAdd:TaaziSukhiMitti,
+    content:'‘‘Taazi Sukhi Mitti’ is a short film, which explores simplicity in today’s world. It talks about a newlywed couple who just want to start their first proper conversation. ',
+    youtube:'',
+    drive:'',
   },
 ]
 
@@ -95,13 +105,14 @@ export default function ProjectDisp() {
     <>
       <Container>
         <h2>~Projects</h2>
-        {/* <ProjectDrawer/> */}
         <CardContain>
+         <Zoom cascade triggerOnce>
          {details.map((detail,index)=>{
           return(
-            <Card detail={detail} key={index}/>
+            <Card detail={detail} key={index} />
          )
          })}
+         </Zoom>
         </CardContain>
       </Container>
     </>

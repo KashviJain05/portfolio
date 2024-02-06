@@ -130,7 +130,7 @@ export default function EduDisp() {
       </ContainerWrap>
       <ConentArea>
         <Work data-scroll data-scroll-speed="1" data-scroll-delay="0.13">
-          <Slide direction="left" triggerOnce>
+          <Slide direction="left" triggerOnce cascade>
             <WorkItem className="fade-in">
               <span>Year</span>
               <h2 className="Title">Title</h2>

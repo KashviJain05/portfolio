@@ -83,12 +83,13 @@ const Profile = styled.div`
   }
 
   img {
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     border-radius: 50%;
   }
 
   p {
+    margin-top:20px;
     padding: 20px;
     text-align: left;
     letter-spacing: 1.5px;
