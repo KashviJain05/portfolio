@@ -85,16 +85,26 @@ const Profile = styled.div`
   img {
     height: 230px;
     width: 230px;
-    border-radius: 50%;
+    border-radius: 50%; 
+    box-shadow:-5px 0px 15px -1px grey;
   }
 
   p {
-    margin-top:20px;
+    margin-top: 20px;
     padding: 20px;
     text-align: left;
     letter-spacing: 1.5px;
     line-height: 25px;
     font-size: ${(props) => props.theme.fontlg};
+
+    span{
+      color:wheat;
+    }
+
+    .name{
+      color:cyan;
+      font-weight:bolder;
+    }
 
     @media (max-width: 60em) {
       letter-spacing: 1.2px;
@@ -129,7 +139,7 @@ const StackAnimation = styled.div`
       }
     }
 
-    animation: mymove 45s infinite;
+    animation: mymove 30s linear infinite;
 
     @media (max-width: 60em) {
       width: 700px;
@@ -169,9 +179,9 @@ const AboutDisp = () => {
   useEffect(() => {
     try {
       gsap.to(".Animetext", {
-        y: "-80px",
+        y: "-60px",
         repeat: -1,
-        duration: 8,
+        duration: 5,
         yoyo: true,
         opacity: 1,
         delay: 1,
@@ -189,17 +199,25 @@ const AboutDisp = () => {
           <Profile data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
             <img src={imgAdd} alt="profile-pic" />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply
-              random text.
+              I am <span className="name">Kashvi Jain</span>, a film editor with a passion for storytelling.
+              My specialization lies in <span>editing films</span>, and I am proficient in
+              using <span>Adobe Premiere Pro</span> and <span>DaVinci Resolve</span>. I have had the
+              opportunity to work on different projects, including <span>short films,
+              documentaries, corporate films, music videos, and advertisements</span>.
+              I am deeply passionate about the art of film editing. 
+              <br/>
+              <br/>
+              I look at
+              the art of filmmaking as a medium to connect with the audience and
+              transport them to either a parallel world where they can drop all
+              their worries and enter a land of virtues and fantasies or a
+              mirroring world where they can call a spade a spade. <span>I thrive in
+              collaborative environments and have successfully collaborated with
+              different directors, to bring their visions to life.</span> I am excited
+              about the journey ahead and look forward to contributing my skills
+              to upcoming projects and learning from them. My goal is to create
+              immersive and memorable cinematic experiences, through seamless
+              and impactful edits.
             </p>
           </Profile>
           <StackAnimation

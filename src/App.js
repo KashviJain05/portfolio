@@ -59,21 +59,21 @@ function App() {
           containerRef={containerRef}
         >
           <main className="App" data-scroll-container ref={containerRef}>
-            {loaded ? (
-              <>
+            {/* {loaded ? (
+              <> */}
                 <Home />
                 <About />
                 <Banner />
                 <IIFI />
                 <Projects />
-                <WorkExp />
-                <Education />
+                {/* <WorkExp />
+                <Education /> */}
                 <Contact />
                 <CopyRight />
-              </>
+              {/* </>
             ) : (
               <Loader />
-            )}
+            )} */}
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>

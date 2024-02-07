@@ -1,12 +1,12 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 
-import IIFI1 from "../assets/images/IIFI/IFFI1.jpg";
-import IIFI2 from "../assets/images/IIFI/IIFI2.jpg";
+import IIFI1 from "../assets/images/IIFI/IFFI1.jpeg";
+import IIFI2 from "../assets/images/IIFI/IFFI2.jpeg";
 import IIFI3 from "../assets/images/IIFI/IIFI3.jpg";
-import IIFI4 from "../assets/images/IIFI/IIFI4.jpg";
+import IIFI4 from "../assets/images/IIFI/IFFI4.jpg";
 import IIFI5 from "../assets/images/IIFI/IIFI5.jpg";
-import IIFI6 from "../assets/images/IIFI/IIFI6.jpg";
+import IIFI6 from "../assets/images/IIFI/IFFI6.jpg";
 import BorderBottomImg from "../assets/images/IIFI/border-left.gif";
 
 const images = [IIFI1, IIFI2, IIFI3, IIFI4, IIFI5, IIFI6];
@@ -65,7 +65,7 @@ const Image = styled.img`
 const ImageGroup = styled.div`
   display: grid;
   place-items: center;
-  width: 600px;
+  width: 500px;
   padding-top: 35px;
   padding-bottom: 35px;
   padding-right: 15px;

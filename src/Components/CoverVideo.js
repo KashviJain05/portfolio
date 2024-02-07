@@ -55,7 +55,7 @@ const Title= styled(motion.div)`
         font-family: 'Kaushan Script';
         font-size: ${props=>props.theme.fontxxxl};
         text-shadow: 2px 2px 2px ${props=>props.theme.body};
-        color:#FFF0F5;
+        color:#c5a1ff;
     }
 
     h2{
@@ -109,7 +109,7 @@ const CoverVideo=()=>{
 
     React.useEffect(() => {
     const typed = new Typed(el.current, {
-        strings: ['- Video Editor', '- Filmaker','- Photographer' ],
+        strings: ['- Video Editor', '- Assistant Director','- Sound Recordist' ],
         typeSpeed: 90,
         backDelay:700,
         backSpeed:50,

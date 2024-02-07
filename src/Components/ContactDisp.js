@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
@@ -47,31 +47,29 @@ const ContainerWrap = styled.div`
 
 const ContentArea = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 50px;
 
   @media (max-width: 60em) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
   }
-`;
 
-const Contact = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-
-  @media (max-width: 60em) {
-    width: 80%;
-  }
-
-  @media (max-width: 30em) {
-    width: 100%;
+  h3 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: ${(props) => props.theme.fontxl};
+    background-clip: text;
+    color: transparent;
+    background-image: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
   }
 
   p {
@@ -86,33 +84,17 @@ const Contact = styled.div`
 `;
 
 const Social = styled.div`
-  height: 100%;
+  width: 100%;
+  height: 10vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
-    border-radius: 15px;
-
-    @media (max-width: 60em) {
-      margin-top: 30px;
-    }
-  }
-
-  .Social {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 300px;
-  }
-
-  li {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 20px 3px rgb(34, 34, 79);
+  border-radius: 15px;
 `;
 
 const Icon = styled.span`
@@ -125,14 +107,6 @@ const Icon = styled.span`
   transition: background 0.5s ease-in-out;
 `;
 
-const Name = styled.span`
-  width: 60%;
-  font-size: 1.5em;
-
-  @media (max-width: 60em) {
-    font-size: ${(props) => props.theme.fontlg};
-  }
-`;
 
 const Linkedin = styled.div`
   ${Icon} {
@@ -165,106 +139,69 @@ const Mail = styled.div`
   }
 `;
 
-const Github = styled.div`
-`;
+const Github = styled.div``;
 export default function ContactDisp() {
   return (
     <Container>
       <ContainerWrap>
         <h2>~Reach Out</h2>
         <ContentArea>
-          <Contact data-scroll data-scroll-speed="2">
-            <p>
-              <Fade direction="left" triggerOnce>
-                I'm open to collaborations, freelance and fulltime
-                opportunities, and new creative challenges. Don't hesitate to
-                connect and let's explore the possibilities together. Your
-                project deserves the touch of a passionate video editor, and I'm
-                excited to be a part of it. 👋🏼
-              </Fade>
-            </p>
-          </Contact>
-          <Social data-scroll data-scroll-speed="2">
-            <ul>
-              <li>
-                <Fade direction="right" triggerOnce cascade>
-                  <Linkedin className="Social">
-                    <Icon>
-                      <i
-                        class="fa-brands fa-linkedin-in"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>Linkedin</Name>
-                  </Linkedin>
-                </Fade>
-              </li>
-              <li>
-                <Fade direction="right" triggerOnce>
-                  <Instagram className="Social">
-                    <Icon>
-                      <i
-                        class="fa-brands fa-instagram"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>Personal Profile</Name>
-                  </Instagram>
-                </Fade>
-              </li>
-              <li>
-                <Fade direction="right" triggerOnce>
-                  <Instagram className="Social">
-                    <Icon>
-                      <i
-                        class="fa-brands fa-instagram"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>Work Profile</Name>
-                  </Instagram>
-                </Fade>
-              </li>
-              <li>
-                <Fade direction="right" triggerOnce>
-                  <Phone className="Social">
-                    <Icon>
-                      <i
-                        class="fa-solid fa-phone"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>0000000000</Name>
-                  </Phone>
-                </Fade>
-              </li>
-              <li>
-                <Fade direction="right" triggerOnce>
-                  <Mail className="Social">
-                    <Icon>
-                      <i
-                        class="fa-regular fa-envelope"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>test@gmail.com</Name>
-                  </Mail>
-                </Fade>
-              </li>
-              <li>
-                <Fade direction="right" triggerOnce>
-                  <Github className="Social">
-                    <Icon>
-                      <i
-                        class="fa-brands fa-github"
-                        style={{ color: "#ffffff" }}
-                      ></i>
-                    </Icon>
-                    <Name>Github</Name>
-                  </Github>
-                </Fade>
-              </li>
-            </ul>
+          <p data-scroll data-scroll-speed="1">
+            <Fade direction="left" triggerOnce>
+              I'm open to collaborations, freelance and fulltime opportunities,
+              and new creative challenges. Don't hesitate to connect and let's
+              explore the possibilities together. Your project deserves the
+              touch of a passionate video editor, and I'm excited to be a part
+              of it. 👋🏼
+            </Fade>
+          </p>
+          <Fade triggerOnce direction="right">
+            <h3 data-scroll data-scroll-speed="1">Socials:-</h3>
+          </Fade>
+          <Social data-scroll data-scroll-speed="1">
+            <Zoom cascade triggerOnce>
+              <Linkedin className="Social">
+                <Icon>
+                  <i
+                    class="fa-brands fa-linkedin-in"
+                    style={{ color: "#ffffff" }}
+                  ></i>
+                </Icon>
+              </Linkedin>
+
+              <Instagram className="Social">
+                <Icon>
+                  <i
+                    class="fa-brands fa-instagram"
+                    style={{ color: "#ffffff" }}
+                  ></i>
+                </Icon>
+              </Instagram>
+
+              <Phone className="Social">
+                <Icon>
+                  <i class="fa-solid fa-phone" style={{ color: "#ffffff" }}></i>
+                </Icon>
+              </Phone>
+
+              <Mail className="Social">
+                <Icon>
+                  <i
+                    class="fa-regular fa-envelope"
+                    style={{ color: "#ffffff" }}
+                  ></i>
+                </Icon>
+              </Mail>
+
+              <Github className="Social">
+                <Icon>
+                  <i
+                    class="fa-brands fa-github"
+                    style={{ color: "#ffffff" }}
+                  ></i>
+                </Icon>
+              </Github>
+            </Zoom>
           </Social>
         </ContentArea>
       </ContainerWrap>
