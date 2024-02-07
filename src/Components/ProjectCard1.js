@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import drive from "../assets/images/Project Socials/google-drive.png";
 import youtube from "../assets/images/Project Socials/youtube.png";
-// import { Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const CardContainer = styled.article`
   font-family: "Alata";
@@ -115,7 +115,7 @@ const Social = styled.div`
 
 const Card = (props) => {
   return (
-    // <Fade direction="up" triggerOnce>
+    <Zoom triggerOnce>
       <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
         <img src={props.detail.imgAdd} />
         <CardContent className="CardContent">
@@ -139,7 +139,7 @@ const Card = (props) => {
           </CardDescription>
         </CardContent>
       </CardContainer>
-    // </Fade>
+    </Zoom>
   );
 };
 

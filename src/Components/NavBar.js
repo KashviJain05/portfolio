@@ -3,14 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion/dist/framer-motion";
 
 // menu items array
-const menuitems = [
-  "About",
-  "IIFI@2021",
-  "Projects",
-  "Work",
-  "Education",
-  "Contact",
-];
+const menuitems = ["About", "Insights", "IIFI@2021", "Projects", "Contact"];
 
 // the navbar container which contains items
 const NavContainer = styled(motion.div)`

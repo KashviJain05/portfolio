@@ -27,7 +27,11 @@ const ContainerWrap = styled.div`
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
-    background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-image: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
     border-bottom: 2px solid #fff;
     // border-top: 2px solid #fff;
     padding-bottom: 4px;
@@ -63,6 +67,20 @@ const Work = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 90em) {
+    max-width: 75%;
+  }
+
+  @media (max-width: 90em) {
+    max-width: 90%;
+  }
+
+  li {
+    font-size: ${(props) => props.theme.fontlg};
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 const WorkItem = styled.div`
@@ -81,27 +99,26 @@ const WorkItem = styled.div`
     color: #00ffdc;
     trasition: 1s ease-in-out;
 
-    @media(max-width:90em){
-      font-size:1.75em;
+    @media (max-width: 90em) {
+      font-size: 1.75em;
     }
 
-    @media(max-width:60em){
-      font-size:1.50em;
+    @media (max-width: 60em) {
+      font-size: 1.5em;
     }
-
   }
 
-  &::before{
-    position:absolute;
-    content:"";
-    height:17px;
-    width:17px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
     background-color: #00ffdc;
-    left:-80px;
-    top:45px;
-    border-radius:50%;
+    left: -80px;
+    top: 45px;
+    border-radius: 50%;
   }
-`
+`;
 
 const WorkImg = styled.div`
   max-width: 50%;
@@ -112,53 +129,80 @@ const WorkImg = styled.div`
     height: 450px;
     width: 450px;
 
-    @media(max-width:60em){
-      height:350px;
-      width:350px;
+    @media (max-width: 60em) {
+      height: 350px;
+      width: 350px;
     }
   }
-
-  
 `;
 
 export default function WorkExpDisp() {
   return (
     <Container>
       <ContainerWrap>
-        <h2>~Work Experience</h2>
+        <h2>~Insights</h2>
       </ContainerWrap>
       <ConentArea>
-        <Work data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
-        <Slide direction="left" triggerOnce cascade>
-            <WorkItem className="fade-in">
-              <span>Year</span>
-              <h2 className="Title">Title</h2>
-              <span>Company</span>
-            </WorkItem>
-          </Slide>
-          <Slide direction="left" triggerOnce>
-            <WorkItem className="fade-in">
-              <span>Year</span>
-              <h2 className="Title">Title</h2>
-              <span>Company</span>
-            </WorkItem>
-          </Slide>
-          <Slide direction="left" triggerOnce>
-            <WorkItem className="fade-in">
-              <span>Year</span>
-              <h2 className="Title">Title</h2>
-              <span>Company</span>
-            </WorkItem>
-          </Slide>
-          <Slide direction="left" triggerOnce>
-            <WorkItem className="fade-in">
-              <span>Year</span>
-              <h2 className="Title">Title</h2>
-              <span>Company</span>
-            </WorkItem>
-          </Slide>
+        <Work data-scroll data-scroll-speed="1" data-scroll-delay="0.13">
+          <ul>
+            <Slide triggerOnce>
+              <li>
+                My video editing process begins by importing raw footage into
+                editing software.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                I meticulously review the footage, selecting the best shots to
+                tell a compelling story.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                Through careful arrangement and pacing, I establish the
+                narrative flow, ensuring seamless transitions between scenes.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                Next, I fine-tune visuals, adjusting colors, brightness, and
+                contrast for optimal impact.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                Simultaneously, I focus on sound design, layering audio elements
+                to enhance the viewer's immersion.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                Throughout the editing process, I collaborate closely with
+                clients, incorporating feedback to align with their vision.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                As the video takes shape, I apply finishing touches, refining
+                details and polishing the final product.
+              </li>
+            </Slide>
+            <Slide triggerOnce> 
+              <li>
+                The result is a professionally edited video that resonates with
+                audiences, delivering a powerful message or narrative.
+              </li>
+            </Slide>
+            <Slide triggerOnce>
+              <li>
+                My meticulous attention to detail and creative expertise ensure
+                each project achieves its full potential, leaving a lasting
+                impression on viewers.
+              </li>
+            </Slide>
+          </ul>
         </Work>
-        <WorkImg data-scroll data-scroll-speed='1' data-scroll-delay='0.13'>
+        <WorkImg data-scroll data-scroll-speed="1" data-scroll-delay="0.13">
           <img src={WorkIllus} />
         </WorkImg>
       </ConentArea>

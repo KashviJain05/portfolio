@@ -8,7 +8,6 @@ import InDino from '../assets/images/ProjectImg/InDino.jpg';
 import BurgerClub from '../assets/images/ProjectImg/BurgerClub.png';
 import CaterPillarBlues from '../assets/images/ProjectImg/CaterPillarBlues.png';
 import TaaziSukhiMitti from '../assets/images/ProjectImg/TaaziSukhiMitti.png';
-import { Zoom } from "react-awesome-reveal";
 
 
 const details=[
@@ -106,13 +105,11 @@ export default function ProjectDisp() {
       <Container>
         <h2>~Projects</h2>
         <CardContain>
-         <Zoom cascade triggerOnce>
          {details.map((detail,index)=>{
           return(
             <Card detail={detail} key={index} />
          )
          })}
-         </Zoom>
         </CardContain>
       </Container>
     </>
