@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import '@fontsource/sirin-stencil';
 import "@fontsource/kaushan-script";
 import '@fontsource/alata';
+import '@fontsource/gabriela';
 // Here we define Global styles.
 //Global styles are styles that affect the entire document rather than being scoped to a specific component.
 
