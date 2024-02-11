@@ -11,7 +11,7 @@ const CardContainer = styled.article`
   color: white;
   position: relative;
   width: 350px;
-  height: 300px;
+  height: 350px;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
@@ -20,12 +20,12 @@ const CardContainer = styled.article`
 
   @media (max-width: 60em) {
     width: 300px;
-    height: 300px;
+    height: 330px;
   }
 
   @media (max-width: 20em) {
     width: 250px;
-    height: 300px;
+    height: 330px;
   }
 
   img {
