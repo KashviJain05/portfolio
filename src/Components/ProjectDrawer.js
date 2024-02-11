@@ -6,7 +6,7 @@ import DialogTitle from "@mui/joy/DialogTitle";
 import ModalClose from "@mui/joy/ModalClose";
 import styled from "styled-components";
 import Madhumalti from "../assets/images/ProjectImg/Madhumalti1.png";
-import LayerShot from '../assets/images/ProjectImg/LayerShot.png'
+import LayerShot from "../assets/images/ProjectImg/LayerShot.png";
 import drive from "../assets/images/Project Socials/google-drive.png";
 import youtube from "../assets/images/Project Socials/youtube.png";
 import { Fade } from "react-awesome-reveal";

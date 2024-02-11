@@ -87,7 +87,7 @@ const Contact = styled.div`
 
 const Social = styled.div`
   height: 100%;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 
   ul {
     display: flex;

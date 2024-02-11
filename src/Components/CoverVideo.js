@@ -53,7 +53,7 @@ const Title = styled(motion.div)`
   h1 {
     font-family: "Kaushan Script";
     font-size: ${(props) => props.theme.fontxxxl};
-    color:wheat;
+    color: wheat;
     text-shadow: 2px 2px 2px ${(props) => props.theme.body};
   }
 

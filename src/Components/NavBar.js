@@ -127,7 +127,7 @@ const NavBar = () => {
               key={index}
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.9, y: 0 }}
-              onClick={()=>handleScroll(item.id)}
+              onClick={() => handleScroll(item.id)}
             >
               {item.name}
             </motion.li>

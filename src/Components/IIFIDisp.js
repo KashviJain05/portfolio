@@ -63,8 +63,8 @@ const ContentArea = styled.div`
     box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
     border-radius: 15px;
 
-    span{
-      color:wheat;
+    span {
+      color: wheat;
     }
 
     @media (max-width: 60em) {
@@ -82,7 +82,7 @@ const GalleryWraaper = styled.div`
 
 export default function IIFIDisp() {
   return (
-    <Container id="IFFI2021"> 
+    <Container id="IFFI2021">
       <ContainerWrap>
         <h2>~IIFI 2021</h2>
       </ContainerWrap>
@@ -94,28 +94,32 @@ export default function IIFIDisp() {
         </GalleryWraaper>
 
         <p data-scroll data-scroll-speed="2">
-          Being chosen as one of the <span>'75 Creative Minds of India'</span> by the
-          <span>Ministry of Information and Broadcasting and the Directorate of Film
-          Festivals</span> was a tremendous honor for me. Attending <span>the 52nd
-          International Film Festival of India</span> in Goa alongside other winners
-          was an unforgettable experience. 
-          <br/>
-          <br/>
+          Being chosen as one of the <span>'75 Creative Minds of India'</span>{" "}
+          by the
+          <span>
+            Ministry of Information and Broadcasting and the Directorate of Film
+            Festivals
+          </span>{" "}
+          was a tremendous honor for me. Attending{" "}
+          <span>the 52nd International Film Festival of India</span> in Goa
+          alongside other winners was an unforgettable experience.
+          <br />
+          <br />
           Being felicitated by icons like
-          <span> Prasoon Joshi and Union Minister Anurag Thakur</span> was truly humbling and
-          inspiring. The masterclasses conducted by Manoj Vajpayee, Samantha
-          Ruth Prabhu, and Prasoon Joshi were incredibly insightful and provided
-          me with invaluable knowledge and perspective. Participating in
-          interviews that were <span>broadcast on news channels</span> and <span>featured in the
-          peacock edition of IFFI</span> allowed me to share my journey and passion
-          with a wider audience.
-          <br/>
-          <br/>
-          It was a surreal experience to see my story
-          alongside other creative minds in the industry. Overall, being
-          recognized in this way and having the chance to participate in such
-          prestigious events has been a highlight of my career, <span>reaffirming my
-          commitment to creativity and film.</span>
+          <span> Prasoon Joshi and Union Minister Anurag Thakur</span> was truly
+          humbling and inspiring. The masterclasses conducted by Manoj Vajpayee,
+          Samantha Ruth Prabhu, and Prasoon Joshi were incredibly insightful and
+          provided me with invaluable knowledge and perspective. Participating
+          in interviews that were <span>broadcast on news channels</span> and{" "}
+          <span>featured in the peacock edition of IFFI</span> allowed me to
+          share my journey and passion with a wider audience.
+          <br />
+          <br />
+          It was a surreal experience to see my story alongside other creative
+          minds in the industry. Overall, being recognized in this way and
+          having the chance to participate in such prestigious events has been a
+          highlight of my career,{" "}
+          <span>reaffirming my commitment to creativity and film.</span>
         </p>
       </ContentArea>
     </Container>

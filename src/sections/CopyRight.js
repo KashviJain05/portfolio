@@ -17,6 +17,10 @@ const Footer = styled.footer`
 
   p{
     font-size:1.1rem;
+
+    a{
+      text-decoration:none;
+    }
   }
 `;
 
@@ -24,8 +28,7 @@ export default function CopyRight() {
   return (
     <>
       <Footer>
-        <p>© KASHVI JAIN</p>
-        <p>Made with ❤️ by Sumit Grover</p>
+        <p><a href="kashvijain.me">© KASHVI JAIN</a></p>
       </Footer>
     </>
   );

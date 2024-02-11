@@ -85,8 +85,8 @@ const Profile = styled.div`
   img {
     height: 230px;
     width: 230px;
-    border-radius: 50%; 
-    box-shadow:-5px 0px 15px -1px grey;
+    border-radius: 50%;
+    box-shadow: -5px 0px 15px -1px grey;
   }
 
   p {
@@ -97,13 +97,13 @@ const Profile = styled.div`
     line-height: 25px;
     font-size: ${(props) => props.theme.fontlg};
 
-    span{
-      color:wheat;
+    span {
+      color: wheat;
     }
 
-    .name{
-      color:cyan;
-      font-weight:bolder;
+    .name {
+      color: cyan;
+      font-weight: bolder;
     }
 
     @media (max-width: 60em) {
@@ -199,25 +199,33 @@ const AboutDisp = () => {
           <Profile data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
             <img src={imgAdd} alt="profile-pic" />
             <p>
-              I am <span className="name">Kashvi Jain</span>, a film editor with a passion for storytelling.
-              My specialization lies in <span>editing films</span>, and I am proficient in
-              using <span>Adobe Premiere Pro</span> and <span>DaVinci Resolve</span>. I have had the
-              opportunity to work on different projects, including <span>short films,
-              documentaries, corporate films, music videos, and advertisements</span>.
-              I am deeply passionate about the art of film editing. 
-              <br/>
-              <br/>
-              I look at
-              the art of filmmaking as a medium to connect with the audience and
-              transport them to either a parallel world where they can drop all
-              their worries and enter a land of virtues and fantasies or a
-              mirroring world where they can call a spade a spade. <span>I thrive in
-              collaborative environments and have successfully collaborated with
-              different directors, to bring their visions to life.</span> I am excited
-              about the journey ahead and look forward to contributing my skills
-              to upcoming projects and learning from them. My goal is to create
-              immersive and memorable cinematic experiences, through seamless
-              and impactful edits.
+              I am <span className="name">Kashvi Jain</span>, a film editor with
+              a passion for storytelling. My specialization lies in{" "}
+              <span>editing films</span>, and I am proficient in using{" "}
+              <span>Adobe Premiere Pro</span> and <span>DaVinci Resolve</span>.
+              I have had the opportunity to work on different projects,
+              including{" "}
+              <span>
+                short films, documentaries, corporate films, music videos, and
+                advertisements
+              </span>
+              . I am utterly enthralled by the artistry of film editing, where
+              every frame dances with the rhythm of storytelling.
+              <br />
+              <br />I look at the art of filmmaking as a medium to connect with
+              the audience and transport them to either a parallel world where
+              they can drop all their worries and enter a land of virtues and
+              fantasies or a mirroring world where they can call a spade a
+              spade.{" "}
+              <span>
+                I thrive in collaborative environments and have successfully
+                collaborated with different directors, to bring their visions to
+                life.
+              </span>{" "}
+              I am excited about the journey ahead and look forward to
+              contributing my skills to upcoming projects and learning from
+              them. My goal is to create immersive and memorable cinematic
+              experiences, through seamless and impactful edits.
             </p>
           </Profile>
           <StackAnimation

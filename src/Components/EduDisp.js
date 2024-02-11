@@ -125,7 +125,7 @@ const WorkImg = styled.div`
 export default function EduDisp() {
   return (
     <Container>
-      <ContainerWrap>     
+      <ContainerWrap>
         <h2>~Education</h2>
       </ContainerWrap>
       <ConentArea>

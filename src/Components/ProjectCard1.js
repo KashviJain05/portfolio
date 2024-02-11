@@ -126,7 +126,7 @@ const Card = (props) => {
         <img src={props.project.Image} />
         <CardContent className="CardContent">
           <CardTitle className="CardTitle">{props.project.Name}</CardTitle>
-          <CardSubtitle className="CardSub">Click to know more</CardSubtitle>
+          <CardSubtitle className="CardSub">Click to delve into my project</CardSubtitle>
           <CardDescription className="CardDescription">
             {props.project.About}
             <br />

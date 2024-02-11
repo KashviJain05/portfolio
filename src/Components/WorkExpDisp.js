@@ -187,7 +187,7 @@ export default function WorkExpDisp() {
                 details and polishing the final product.
               </li>
             </Slide>
-            <Slide triggerOnce> 
+            <Slide triggerOnce>
               <li>
                 The result is a professionally edited video that resonates with
                 audiences, delivering a powerful message or narrative.
