@@ -82,7 +82,7 @@ const GalleryWraaper = styled.div`
 
 export default function IIFIDisp() {
   return (
-    <Container>
+    <Container id="IFFI2021"> 
       <ContainerWrap>
         <h2>~IIFI 2021</h2>
       </ContainerWrap>

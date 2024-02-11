@@ -138,7 +138,7 @@ const WorkImg = styled.div`
 
 export default function WorkExpDisp() {
   return (
-    <Container>
+    <Container id="Insights">
       <ContainerWrap>
         <h2>~Insights</h2>
       </ContainerWrap>

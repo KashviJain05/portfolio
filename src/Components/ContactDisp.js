@@ -180,7 +180,7 @@ const Blogger = styled.div`
 `;
 export default function ContactDisp() {
   return (
-    <Container>
+    <Container id="Contact">
       <ContainerWrap>
         <h2>~Reach Out</h2>
         <ContentArea>

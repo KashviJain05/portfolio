@@ -192,7 +192,7 @@ const AboutDisp = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="About">
       <ContainerWrap>
         <h2>~About</h2>
         <ContentArea>

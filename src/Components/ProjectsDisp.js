@@ -1,59 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "./ProjectCard1";
 import ProjectDrawer from "./ProjectDrawer";
-import Madhumalti1 from "../assets/images/ProjectImg/Madhumalti1.png";
-import LayerShot from '../assets/images/ProjectImg/LayerShot.png';
-import InDino from '../assets/images/ProjectImg/InDino.jpg';
-import BurgerClub from '../assets/images/ProjectImg/BurgerClub.png';
-import CaterPillarBlues from '../assets/images/ProjectImg/CaterPillarBlues.png';
-import TaaziSukhiMitti from '../assets/images/ProjectImg/TaaziSukhiMitti.png';
-
-
-const details=[
-  {
-    name:'Madumalti',
-    imgAdd:Madhumalti1,
-    content:'‘Madhumalti’ is a short film that explores the theme of love. The film talks about Anandita who finds colors in her pale life after meeting Tara. Here’s the link to the film.',
-    youtube:'',
-    drive:'https://drive.google.com/file/d/1WCv2pdZ4nPewKUIvND4TDK0ojepbl98g/view',
-  },
-  {
-    name:'LayerShot Ad',
-    imgAdd:LayerShot,
-    content:'It is an Advertisement for the Layer Shot deodorant, which is packed in a bullet-shaped bottle to attract customers.',
-    youtube:'',
-    drive:'',
-  },
-  {
-    name:'In Dino MV',
-    imgAdd:InDino,
-    content:'‘In Dino’ is a Music Cover Video, using the song ‘In Dino’ from the film ‘Life in a Metro’. It is my first music video. Inspired by the song itself, it shows the life of people in metropolitan cities and how they cross paths with each other.',
-    youtube:'',
-    drive:'',
-  },
-  {
-    name:'BurgerClub AD',
-    imgAdd:BurgerClub,
-    content:'It is an Advertisement for the Burger Club Café, which serves delicious burgers made of fresh buns prepared in-house. ',
-    youtube:'',
-    drive:'',
-  },
-  {
-    name:'CaterPillar Blues',
-    imgAdd:CaterPillarBlues,
-    content:'‘Caterpillar Blues’ is a short film, on which I worked as a sound designer. The film portrays a man struggling to adjust to a chair. The film is simple, yet it touches different subtexts within it. ',
-    youtube:'',
-    drive:'',
-  },
-  {
-    name:'Taazi Sukhi Mitti',
-    imgAdd:TaaziSukhiMitti,
-    content:'‘‘Taazi Sukhi Mitti’ is a short film, which explores simplicity in today’s world. It talks about a newlywed couple who just want to start their first proper conversation. ',
-    youtube:'',
-    drive:'',
-  },
-]
+import { db } from "../firebaseinit";
+import { collection, getDocs } from "firebase/firestore";
 
 const Container = styled.div`
   min-height: 100vh;
@@ -76,7 +26,11 @@ const Container = styled.div`
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
-    background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-image: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
     border-bottom: 2px solid #fff;
     // border-top: 2px solid #fff;
     padding-bottom: 4px;
@@ -93,6 +47,7 @@ const Container = styled.div`
 `;
 
 const CardContain = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -100,16 +55,34 @@ const CardContain = styled.div`
 `;
 
 export default function ProjectDisp() {
+  const [projects, setproject] = useState([]);
+
+  // Effect hook to fetch data from Firestore and populate the details array
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "projects"));
+        const detailsArray = [];
+        querySnapshot.forEach((doc) => {
+          detailsArray.push(doc.data());
+        });
+        setproject(detailsArray);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData(); // Call the fetchData function when the component mounts
+  }, []); // Empty dependency array ensures the effect runs only once,
+
   return (
     <>
-      <Container>
+      <Container id="MyProjects">
         <h2>~Projects</h2>
         <CardContain>
-         {details.map((detail,index)=>{
-          return(
-            <Card detail={detail} key={index} />
-         )
-         })}
+          {projects.map((project, index) => {
+            return <Card project={project} key={index} />;
+          })}
         </CardContain>
       </Container>
     </>

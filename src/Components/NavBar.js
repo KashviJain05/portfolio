@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion/dist/framer-motion";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 // menu items array
-const menuitems = ["About", "Insights", "IIFI@2021", "Projects", "Contact"];
+const menuitems = [
+  { name: "About", id: "#About" },
+  { name: "Insights", id: "#Insights" },
+  { name: "IFFI@2021", id: "#IFFI2021" },
+  { name: "Projects", id: "#MyProjects" },
+  { name: "Contact", id: "#Contact" },
+];
 
 // the navbar container which contains items
 const NavContainer = styled(motion.div)`
@@ -80,6 +87,21 @@ const MenuItems = styled.ul`
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
+
+  const { scroll } = useLocomotiveScroll();
+
+  const handleScroll = (id) => {
+    let elem = document.querySelector(id);
+    console.log(elem);
+    setClick(!click);
+
+    scroll.scrollTo(elem, {
+      offset: "-100",
+      duration: "2000",
+      easing: [0.25, 0.0, 0.35, 1.0],
+    });
+  };
+
   return (
     <NavContainer
       show={click}
@@ -105,8 +127,9 @@ const NavBar = () => {
               key={index}
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.9, y: 0 }}
+              onClick={()=>handleScroll(item.id)}
             >
-              {item}
+              {item.name}
             </motion.li>
           );
         })}

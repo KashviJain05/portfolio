@@ -15,6 +15,7 @@ import Education from "./sections/Education";
 import Loader from "./sections/Loader";
 import Contact from "./sections/Contact";
 import CopyRight from "./sections/CopyRight";
+import Mazak from "./sections/Mazak";
 
 function App() {
   const containerRef = useRef(null);
@@ -54,8 +55,6 @@ function App() {
                 <WorkExp/>
                 <IIFI />
                 <Projects />
-                {/* <WorkExp />
-                <Education /> */}
                 <Contact />
                 <CopyRight />
               </>
@@ -63,6 +62,7 @@ function App() {
               <Loader />
             )}
           </main>
+          {/* <Mazak/> */}
         </LocomotiveScrollProvider>
       </ThemeProvider>
     </>
