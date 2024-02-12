@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import IIFI1 from "../assets/images/IIFI/IFFI1.jpeg";
 import IIFI2 from "../assets/images/IIFI/IFFI2.jpeg";

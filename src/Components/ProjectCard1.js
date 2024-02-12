@@ -10,7 +10,7 @@ const CardContainer = styled.article`
   font-family: "Alata";
   color: white;
   position: relative;
-  width: 350px;
+  width: 400px;
   height: 350px;
   background: #131313;
   overflow: hidden;
@@ -29,10 +29,10 @@ const CardContainer = styled.article`
   }
 
   img {
-    height: 60%;
+    height: 66%;
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   &:hover .CardContent {
@@ -123,40 +123,42 @@ const Card = (props) => {
   return (
     <Zoom triggerOnce>
       <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
-        <img src={props.project.Image} />
+        <img src={props.project.Image} alt="Project-img" />
         <CardContent className="CardContent">
           <CardTitle className="CardTitle">{props.project.Name}</CardTitle>
-          <CardSubtitle className="CardSub">Click to delve into my project</CardSubtitle>
+          <CardSubtitle className="CardSub">
+            Click to delve into my project
+          </CardSubtitle>
           <CardDescription className="CardDescription">
             {props.project.About}
             <br />
             <br />
             Check it out :-
-            <br/>
-            <br/>
-            <Social>
-              {props.project.Drive !== "" ? (
-                <a href={props.project.Drive}>
-                  <img alt="drive-pic" src={drive} />
-                </a>
-              ) : null}
-              {props.project.YouTube !== "" ? (
-                <a href={props.project.YouTube}>
-                  <img alt="youTube-pic" src={youtube} />
-                </a>
-              ) : null}
-              {props.project.Instagram !== "" ? (
-                <a href={props.project.Instagram}>
-                  <img alt="insta-pic" src={instagram} />
-                </a>
-              ) : null}
-              {props.project.Vimeo !== "" ? (
-                <a href={props.project.Vimeo}>
-                  <img alt="vimeo-pic" src={vimeo} />
-                </a>
-              ) : null}
-            </Social>
+            <br />
+            <br />
           </CardDescription>
+          <Social>
+            {props.project.Drive !== "" ? (
+              <a href={props.project.Drive}>
+                <img alt="drive-pic" src={drive} />
+              </a>
+            ) : null}
+            {props.project.YouTube !== "" ? (
+              <a href={props.project.YouTube}>
+                <img alt="youTube-pic" src={youtube} />
+              </a>
+            ) : null}
+            {props.project.Instagram !== "" ? (
+              <a href={props.project.Instagram}>
+                <img alt="insta-pic" src={instagram} />
+              </a>
+            ) : null}
+            {props.project.Vimeo !== "" ? (
+              <a href={props.project.Vimeo}>
+                <img alt="vimeo-pic" src={vimeo} />
+              </a>
+            ) : null}
+          </Social>
         </CardContent>
       </CardContainer>
     </Zoom>

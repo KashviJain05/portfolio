@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Card from "./ProjectCard1";
-import ProjectDrawer from "./ProjectDrawer";
 import Madhumalti1 from "../assets/images/ProjectImg/Madhumalti1.png";
 import LayerShot from "../assets/images/ProjectImg/LayerShot.png";
 import InDino from "../assets/images/ProjectImg/InDino.jpg";
@@ -13,6 +12,8 @@ import LetterbyBrother from "../assets/images/ProjectImg/Letters By My Brother.j
 import suffering from "../assets/images/ProjectImg/Suffering.png";
 import reflection from "../assets/images/ProjectImg/Reflections.png";
 import showreel from "../assets/images/ProjectImg/ShowReel.png";
+import TheyyamDocu from "../assets/images/ProjectImg/TheeyamDocu.png";
+import TheyyamMV from "../assets/images/ProjectImg/TheeyamMV.png";
 
 const details = [
   {
@@ -98,7 +99,7 @@ const details = [
   },
   {
     Name: "Theyyam Documentary",
-    Image: "",
+    Image: TheyyamDocu,
     About:
       "Taazi Sukhi Mitti (2023) ‘Taazi Sukhi Mitti’ is a short film, which explores simplicity in today’s world. It talks about a newlywed couple who just want to start their first proper conversation.",
     YouTube: "",
@@ -109,7 +110,7 @@ const details = [
   },
   {
     Name: "Theyyam MV",
-    Image: "",
+    Image: TheyyamMV,
     About:
       "Taazi Sukhi Mitti (2023) ‘Taazi Sukhi Mitti’ is a short film, which explores simplicity in today’s world. It talks about a newlywed couple who just want to start their first proper conversation.",
     YouTube: "",

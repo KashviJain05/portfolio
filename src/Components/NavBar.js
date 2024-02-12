@@ -92,7 +92,6 @@ const NavBar = () => {
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
-    console.log(elem);
     setClick(!click);
 
     scroll.scrollTo(elem, {
