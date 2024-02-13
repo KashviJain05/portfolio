@@ -26,6 +26,13 @@ const Section = styled.section`
     width: 100%;
     height: 100vh;
     object-fit: cover;
+
+    @media (max-width: 48em) {
+      object-position: center 10%;
+    }
+    @media (max-width: 30em) {
+      object-position: center 50%;
+    }
   }
 `;
 
@@ -53,7 +60,8 @@ const Title = styled(motion.div)`
   h1 {
     font-family: "Kaushan Script";
     font-size: ${(props) => props.theme.fontxxxl};
-    color: wheat;
+    // color: wheat;
+    color:#e898ff;
     text-shadow: 2px 2px 2px ${(props) => props.theme.body};
   }
 

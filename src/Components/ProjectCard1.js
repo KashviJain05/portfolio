@@ -93,7 +93,7 @@ const CardTitle = styled.p`
 const CardSubtitle = styled.p`
   display: block;
   font-size: ${(props) => props.theme.fontmd};
-  margin-top: 5px;
+  margin-top: 10px;
   @media (max-width: 60em) {
     font-size: ${(props) => props.theme.fontsm};
   }
@@ -127,7 +127,7 @@ const Card = (props) => {
         <CardContent className="CardContent">
           <CardTitle className="CardTitle">{props.project.Name}</CardTitle>
           <CardSubtitle className="CardSub">
-            Click to delve into my project
+            Know more :-
           </CardSubtitle>
           <CardDescription className="CardDescription">
             {props.project.About}
