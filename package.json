@@ -15,6 +15,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@vercel/analytics": "^1.1.1",
+    "firebase": "^10.8.0",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "locomotive-scroll": "^4.1.4",
