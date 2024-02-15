@@ -136,22 +136,22 @@ const Card = (props) => {
           </CardDescription>
           <Social>
             {props.project.Drive !== "" ? (
-              <a href={props.project.Drive}>
+              <a href={props.project.Drive} target="_blank">
                 <img alt="drive-pic" src={drive} />
               </a>
             ) : null}
             {props.project.YouTube !== "" ? (
-              <a href={props.project.YouTube}>
+              <a href={props.project.YouTube} target="_blank">
                 <img alt="youTube-pic" src={youtube} />
               </a>
             ) : null}
             {props.project.Instagram !== "" ? (
-              <a href={props.project.Instagram}>
+              <a href={props.project.Instagram} target="_blank">
                 <img alt="insta-pic" src={instagram} />
               </a>
             ) : null}
             {props.project.Vimeo !== "" ? (
-              <a href={props.project.Vimeo}>
+              <a href={props.project.Vimeo} target="_blank">
                 <img alt="vimeo-pic" src={vimeo} />
               </a>
             ) : null}
