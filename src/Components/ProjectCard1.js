@@ -10,8 +10,7 @@ const CardContainer = styled.article`
   font-family: "Alata";
   color: white;
   position: relative;
-  width: 400px;
-  height: 350px;
+  height: 300px;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
@@ -19,12 +18,10 @@ const CardContainer = styled.article`
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
 
   @media (max-width: 60em) {
-    width: 300px;
     height: 330px;
   }
 
   @media (max-width: 20em) {
-    width: 250px;
     height: 330px;
   }
 

@@ -95,7 +95,7 @@ export default function IIFIDisp() {
 
         <p data-scroll data-scroll-speed="2">
           Being chosen as one of the <span>'75 Creative Minds of India'</span>{" "}
-          by the
+          by the 
           <span>
             Ministry of Information and Broadcasting and the Directorate of Film
             Festivals
