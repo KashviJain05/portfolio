@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Card from "./ProjectCard1";
 import { db } from "../firebaseinit";
 import { collection, getDocs } from "firebase/firestore";
+import ProjectDrawer from "./ProjectDrawer";
 
 const Container = styled.div`
   min-height: 100vh;
@@ -82,7 +83,9 @@ export default function ProjectDisp() {
           {projects.map((detail, index) => {
             return <Card project={detail} key={index} />;
           })}
+         
         </CardContain>
+        {/* <ProjectDrawer/> */}
       </Container>
     </>
   );

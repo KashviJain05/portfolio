@@ -17,12 +17,16 @@ const CardContainer = styled.article`
   margin-top: 20px;
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
 
+  @media (max-width: 90em) {
+    height: 310px;
+  }
+
   @media (max-width: 60em) {
     height: 330px;
   }
 
-  @media (max-width: 20em) {
-    height: 330px;
+  @media (max-width: 40em) {
+    height: 350px;
   }
 
   img {
@@ -79,10 +83,10 @@ const CardTitle = styled.p`
   );
 
   @media (max-width: 60em) {
-    font-size: ${(props) => props.theme.fontxl};
+    font-size: 1.5em;
   }
 
-  @media (max-width: 20em) {
+  @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontlg};
   }
 `;
@@ -118,7 +122,7 @@ const Social = styled.div`
 
 const Card = (props) => {
   return (
-    <Zoom triggerOnce>
+    <Zoom triggerOnce className="zoomclass">
       <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
         <img src={props.project.Image} alt="Project-img" />
         <CardContent className="CardContent">
