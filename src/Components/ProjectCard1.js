@@ -14,19 +14,30 @@ const CardContainer = styled.article`
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-bottom: 50px;
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
+  margin-left:15px;
+  margn-right:15px;
 
   @media (max-width: 90em) {
     height: 310px;
+    margin-bottom: 40px;
+    margin-left:10px;
+    margn-right:10px;
   }
 
   @media (max-width: 60em) {
     height: 330px;
+    margin-bottom: 30px;
+    margin-left:5px;
+    margn-right:5px;
   }
 
   @media (max-width: 40em) {
     height: 350px;
+    margin-bottom: 20px;
+    margin-left:0px;
+    margn-right:0px;
   }
 
   img {

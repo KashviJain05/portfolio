@@ -78,6 +78,10 @@ const Profile = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  @media (max-width: 70em) {
+    width: 90%;
+  }
+
   @media (max-width: 60em) {
     width: 100%;
   }
@@ -106,7 +110,7 @@ const Profile = styled.div`
       font-weight: bolder;
     }
 
-    @media (max-width: 60em) {
+    @media (max-width: 70em) {
       letter-spacing: 1.2px;
     }
   }

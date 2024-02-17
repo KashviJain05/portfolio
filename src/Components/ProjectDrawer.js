@@ -51,7 +51,7 @@ const ProjectContain = styled.div`
         }
 
         @media (max-width: 40em) {
-          font-size: 1em;
+          font-size: 1.1em;
         }
       }
 
