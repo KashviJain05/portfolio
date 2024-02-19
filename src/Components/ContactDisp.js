@@ -231,7 +231,7 @@ export default function ContactDisp() {
                         href="https://www.instagram.com/frames_finesse/"
                         target="_blank"
                       >
-                        Work Profile
+                        Instagram
                       </a>
                     </Name>
                   </Instagram>

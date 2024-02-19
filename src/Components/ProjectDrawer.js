@@ -35,7 +35,7 @@ const ProjectContain = styled.div`
 
       h3 {
         width: 60%;
-        font-size: 3em;
+        font-size: 2.5em;
         font-family: "Prata", serif;
         font-weight: bold;
         background-clip: text;

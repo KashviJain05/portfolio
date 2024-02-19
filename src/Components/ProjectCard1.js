@@ -134,7 +134,7 @@ const Social = styled.div`
 const Card = (props) => {
   return (
     <Zoom triggerOnce className="zoomclass">
-      <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
+      <CardContainer data-scroll data-scroll-delay="0.13" data-scroll-speed="1">
         <img src={props.project.Image} alt="Project-img" />
         <CardContent className="CardContent">
           <CardTitle className="CardTitle">{props.project.Name}</CardTitle>
