@@ -115,7 +115,7 @@ const CoverVideo = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["- Video Editor", "- Assistant Director", "- Sound Recordist"],
+      strings: ["- Video Editor", "- Assistant Director"],
       typeSpeed: 90,
       backDelay: 700,
       backSpeed: 50,

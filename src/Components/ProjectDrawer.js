@@ -79,6 +79,8 @@ const DrawerSahab = styled.div`
   align-items: center;
   justify-content: space-around;
 
+
+
   h3{
     font-size: 2.2em;
     padding:5px;
@@ -102,6 +104,7 @@ const DrawerSahab = styled.div`
     width: 80%;
     border-radius: 10px;
     box-shadow: 0px 2px 15px 10px rgb(34, 34, 79);
+    object-fit:fill;
 
     @media (max-width: 60em) {
       height: 20%;
@@ -137,6 +140,8 @@ const Social = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color:#fff;
+  font-size:1.3em;
 
   img {
     height: 32px;
@@ -199,7 +204,7 @@ export default function ProjectDrawer() {
             <div
               className="Zoom"
               data-scroll
-              data-scroll-speed="1"
+              data-scroll-speed="0.8"
               data-scroll-delay="0.13"
             >
               <h3>{index + 1 + ".  " + project.Name}</h3>
@@ -218,7 +223,8 @@ export default function ProjectDrawer() {
             onClose={() => handleCloseDrawer(project.id)}
             anchor="right"
             variant="outlined"
-            className="DrawerSahab"
+            className="Drawer"
+            size="md"
           >
             <ModalClose />
             <DrawerSahab>
@@ -228,13 +234,9 @@ export default function ProjectDrawer() {
               <img src={project.Image} alt="projectImg" />
               <p>
                 {project.About}
-                <br />
-                <br />
-                Check it out !!!
-                <br />
-                <br />
               </p>
               <Social>
+                <span>Check it out {" --> "}</span>
                 {project.Drive !== "" ? (
                   <a href={project.Drive} target="_blank">
                     <img alt="drive-pic" src={drive} />

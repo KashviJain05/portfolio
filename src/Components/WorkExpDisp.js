@@ -83,43 +83,6 @@ const Work = styled.div`
   }
 `;
 
-const WorkItem = styled.div`
-  margin-bottom: 30px;
-  color: #fff;
-  position: relative;
-
-  span {
-    font-size: ${(props) => props.theme.fontlg};
-  }
-
-  h2 {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    font-size: ${(props) => props.theme.fontxl};
-    color: #00ffdc;
-    trasition: 1s ease-in-out;
-
-    @media (max-width: 90em) {
-      font-size: 1.75em;
-    }
-
-    @media (max-width: 60em) {
-      font-size: 1.5em;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    height: 17px;
-    width: 17px;
-    background-color: #00ffdc;
-    left: -80px;
-    top: 45px;
-    border-radius: 50%;
-  }
-`;
-
 const WorkImg = styled.div`
   max-width: 50%;
   display: flex;

@@ -71,7 +71,7 @@ const ContentArea = styled.div`
 const Profile = styled.div`
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
   border-radius: 15px;
-  width: 40%;
+  width: 45%;
   min-height: 70vh;
   display: flex;
   flex-direction: column;

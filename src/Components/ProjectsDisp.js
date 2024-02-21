@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Card from "./ProjectCard1";
-import { db } from "../firebaseinit";
-import { collection, getDocs } from "firebase/firestore";
 import ProjectDrawer from "./ProjectDrawer";
 
 const Container = styled.div`
@@ -46,45 +43,12 @@ const Container = styled.div`
   }
 `;
 
-const CardContain = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-`;
 
 export default function ProjectDisp() {
-  const [projects, setproject] = useState([]);
-
-  // Effect hook to fetch data from Firestore and populate the details array
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, "projects"));
-        const detailsArray = [];
-        querySnapshot.forEach((doc) => {
-          detailsArray.push(doc.data());
-        });
-        setproject(detailsArray);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData(); // Call the fetchData function when the component mounts
-  }, []); // Empty dependency array ensures the effect runs only once,
-
   return (
     <>
       <Container id="MyProjects">
         <h2>~Projects</h2>
-        {/* <CardContain>
-          {projects.map((detail, index) => {
-            return <Card project={detail} key={index} />;
-          })}
-         
-        </CardContain> */}
         <ProjectDrawer/>
       </Container>
     </>

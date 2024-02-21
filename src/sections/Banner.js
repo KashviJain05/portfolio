@@ -41,7 +41,15 @@ const BannerComponent = styled.h1`
   }
 
   @media (max-width: 60em) {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+
+  @media (max-width: 20em) {
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 10em) {
+    font-size: 1em;
   }
 
   span {

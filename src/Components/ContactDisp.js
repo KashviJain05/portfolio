@@ -67,7 +67,7 @@ const Contact = styled.div`
   width: 45%;
 
   @media (max-width: 60em) {
-    width: 80%;
+    width: 90%;
   }
 
   @media (max-width: 30em) {
