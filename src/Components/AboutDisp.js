@@ -182,7 +182,7 @@ const AboutDisp = () => {
   useEffect(() => {
     try {
       gsap.to(".Animetext", {
-        y: "-80px",
+        y: "-60px",
         repeat: -1,
         duration: 5,
         yoyo: true,
