@@ -21,7 +21,7 @@ const ProjectContain = styled.div`
   gap: 2.5rem;
   justify-content: center;
   align-items: center;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 
   .ProjectBox {
     width: 100%;
@@ -79,24 +79,21 @@ const DrawerSahab = styled.div`
   align-items: center;
   justify-content: space-around;
 
-
-
-  h3{
+  h3 {
     font-size: 2.2em;
-    padding:5px;
+    padding: 5px;
 
-    @media(max-width:90em){
+    @media (max-width: 90em) {
       font-size: 2em;
     }
 
-    @media(max-width:60em){
+    @media (max-width: 60em) {
       font-size: 1.5em;
     }
 
-    @media(max-width:40em){
+    @media (max-width: 40em) {
       font-size: 1.2em;
     }
-
   }
 
   img {
@@ -104,7 +101,7 @@ const DrawerSahab = styled.div`
     width: 80%;
     border-radius: 10px;
     box-shadow: 0px 2px 15px 10px rgb(34, 34, 79);
-    object-fit:fill;
+    object-fit: fill;
 
     @media (max-width: 60em) {
       height: 20%;
@@ -124,7 +121,6 @@ const DrawerSahab = styled.div`
     padding: 10px;
     font-size: ${(props) => props.theme.fontlg};
 
-
     @media (max-width: 60em) {
       font-size: 1.1em;
     }
@@ -140,8 +136,8 @@ const Social = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color:#fff;
-  font-size:1.3em;
+  color: #fff;
+  font-size: 1.3em;
 
   img {
     height: 32px;
@@ -228,13 +224,9 @@ export default function ProjectDrawer() {
           >
             <ModalClose />
             <DrawerSahab>
-              <h3>
-               {project.Name}
-              </h3>
+              <h3>{project.Name}</h3>
               <img src={project.Image} alt="projectImg" />
-              <p>
-                {project.About}
-              </p>
+              <p>{project.About}</p>
               <Social>
                 <span>Check it out {" --> "}</span>
                 {project.Drive !== "" ? (

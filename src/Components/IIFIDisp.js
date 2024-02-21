@@ -88,12 +88,11 @@ export default function IIFIDisp() {
       </ContainerWrap>
 
       <ContentArea>
-        {/* <IFFIGallery data-scroll data-scroll-speed="2" /> */}
-        <GalleryWraaper data-scroll data-scroll-speed="2">
+        <GalleryWraaper data-scroll data-scroll-speed="1">
           <IFFIGallery2 />
         </GalleryWraaper>
 
-        <p data-scroll data-scroll-speed="2">
+        <p data-scroll data-scroll-speed="1">
           Being chosen as one of the <span>'75 Creative Minds of India'</span>{" "}
           by the{" "}
           <span>

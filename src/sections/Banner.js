@@ -36,20 +36,19 @@ const BannerComponent = styled.h1`
   text-transform: uppercase;
   line-height: 1;
 
-  @media (max-width: 80em) {
+  @media (max-width: 70em) {
     font-size: ${(props) => props.theme.fontxxl};
   }
-
-  @media (max-width: 60em) {
-    font-size: 2em;
+  @media (max-width: 64em) {
+    margin: 1rem 0;
   }
 
-  @media (max-width: 20em) {
-    font-size: 1.2em;
+  @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontxl};
+    margin: 0.5rem 0;
   }
-  
-  @media (max-width: 10em) {
-    font-size: 1em;
+  @media (max-width: 30em) {
+    font-size: ${(props) => props.theme.fontlg};
   }
 
   span {

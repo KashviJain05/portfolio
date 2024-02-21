@@ -38,7 +38,6 @@ const ContainerWrap = styled.div`
       rgba(252, 70, 107, 1) 100%
     );
     border-bottom: 2px solid #fff;
-    // border-top: 2px solid #fff;
     padding-bottom: 4px;
 
     @media (max-width: 60em) {
@@ -173,7 +172,7 @@ const AnimationContent = styled.div`
 
   @media (max-width: 30em) {
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -183,7 +182,7 @@ const AboutDisp = () => {
   useEffect(() => {
     try {
       gsap.to(".Animetext", {
-        y: "-60px",
+        y: "-80px",
         repeat: -1,
         duration: 5,
         yoyo: true,
@@ -200,7 +199,7 @@ const AboutDisp = () => {
       <ContainerWrap>
         <h2>~About</h2>
         <ContentArea>
-          <Profile data-scroll data-scroll-delay="0.13" data-scroll-speed="2">
+          <Profile data-scroll data-scroll-delay="0.13" data-scroll-speed="1">
             <img src={imgAdd} alt="profile-pic" />
             <p>
               I am <span className="name">Kashvi Jain</span>, a film editor with
@@ -235,7 +234,7 @@ const AboutDisp = () => {
           <StackAnimation
             data-scroll
             data-scroll-delay="0.13"
-            data-scroll-speed="2"
+            data-scroll-speed="1"
           >
             <AnimationContent>
               <span className="Animetext">Premiere Pro</span>

@@ -32,7 +32,6 @@ const ContainerWrap = styled.div`
       rgba(252, 70, 107, 1) 100%
     );
     border-bottom: 2px solid #fff;
-    // border-top: 2px solid #fff;
     padding-bottom: 4px;
 
     @media (max-width: 60em) {
