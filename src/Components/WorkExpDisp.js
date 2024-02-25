@@ -77,7 +77,7 @@ const Work = styled.div`
   }
 
   li {
-    font-size: 1.5em;
+    font-size: ${(props) => props.theme.fontlg};
     margin-top: 10px;
     margin-bottom: 10px;
   }
