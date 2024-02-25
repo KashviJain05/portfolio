@@ -68,7 +68,6 @@ const ContentArea = styled.div`
     }
 
     @media (max-width: 60em) {
-      letter-spacing: 1.2px;
       font-size: ${(props) => props.theme.fontlg};
       max-width: 100%;
     }
