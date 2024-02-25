@@ -29,8 +29,8 @@ const Container = styled.div`
 `;
 
 const BannerComponent = styled.h1`
-  font-size: ${(props) => props.theme.fontxxxl};
-  font-family: "Kaushan Script";
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   white-space: nowrap;
   text-transform: uppercase;
@@ -72,7 +72,7 @@ export default function Banner() {
             data-scroll-speed="6"
             data-scroll-target="#up"
           >
-            Transforming raw footage
+            “ Transforming raw footage
           </span>
         </BannerComponent>
         <BannerComponent>
@@ -92,7 +92,7 @@ export default function Banner() {
             data-scroll-speed="6"
             data-scroll-target="#up"
           >
-            engaging narratives
+            engaging narratives ”
           </span>
         </BannerComponent>
       </Container>

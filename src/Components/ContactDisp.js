@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Work Sans", sans-serif;
 
   //media query to adjust padding
   @media (max-width: 60em) {
@@ -23,6 +23,7 @@ const ContainerWrap = styled.div`
 
   h2 {
     width: 100%;
+    font-family: "Alata";
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;

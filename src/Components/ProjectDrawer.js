@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Box from "@mui/joy/Box";
 import Button from "@mui/joy/Button";
 import Drawer from "@mui/joy/Drawer";
-import DialogTitle from "@mui/joy/DialogTitle";
 import ModalClose from "@mui/joy/ModalClose";
 import styled from "styled-components";
 import drive from "../assets/images/Project Socials/google-drive.png";
@@ -36,7 +35,7 @@ const ProjectContain = styled.div`
       h3 {
         width: 60%;
         font-size: 2.5em;
-        font-family: "Prata", serif;
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         background-clip: text;
         color: transparent;
@@ -51,7 +50,7 @@ const ProjectContain = styled.div`
         }
 
         @media (max-width: 40em) {
-          font-size: 1.1em;
+          font-size: 1.25em;
         }
       }
 

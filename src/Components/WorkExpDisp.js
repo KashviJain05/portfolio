@@ -6,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
   //media query to adjust padding
   @media (max-width: 60em) {
@@ -24,6 +24,7 @@ const ContainerWrap = styled.div`
 
   h2 {
     width: 100%;
+    font-family: "Alata";
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
@@ -76,7 +77,7 @@ const Work = styled.div`
   }
 
   li {
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
   }

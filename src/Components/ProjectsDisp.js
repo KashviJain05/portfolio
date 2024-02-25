@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import ProjectDrawer from "./ProjectDrawer";
 
@@ -11,7 +11,7 @@ const Container = styled.div`
 
   padding: 0px 80px 0px 80px;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
   //media query to adjust padding
   @media (max-width: 60em) {
@@ -20,6 +20,7 @@ const Container = styled.div`
 
   h2 {
     width: 100%;
+    font-family: "Alata";
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;

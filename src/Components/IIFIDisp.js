@@ -4,7 +4,7 @@ import IFFIGallery2 from "./IFFIGallery2";
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
   //media query to adjust padding
   @media (max-width: 60em) {
@@ -22,6 +22,7 @@ const ContainerWrap = styled.div`
 
   h2 {
     width: 100%;
+    font-family: "Alata";
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
@@ -57,9 +58,8 @@ const ContentArea = styled.div`
     max-width: 90%;
     padding: 20px;
     text-align: left;
-    letter-spacing: 1.5px;
     line-height: 25px;
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 1.35em;
     box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
     border-radius: 15px;
 
@@ -69,6 +69,7 @@ const ContentArea = styled.div`
 
     @media (max-width: 60em) {
       letter-spacing: 1.2px;
+      font-size: ${(props) => props.theme.fontlg};
       max-width: 100%;
     }
   }
@@ -96,7 +97,7 @@ export default function IIFIDisp() {
           Being chosen as one of the <span>'75 Creative Minds of India'</span>{" "}
           by the{" "}
           <span>
-             Ministry of Information and Broadcasting and the Directorate of Film
+            Ministry of Information and Broadcasting and the Directorate of Film
             Festivals
           </span>{" "}
           was a tremendous honor for me. Attending{" "}
@@ -119,6 +120,11 @@ export default function IIFIDisp() {
           having the chance to participate in such prestigious events has been a
           highlight of my career,{" "}
           <span>reaffirming my commitment to creativity and film.</span>
+          <br />
+          <br />
+          Additionally, the friendships forged and connections made during the
+          festival continue to enrich my professional journey,{" "}<span>underscoring the
+          profound impact of such recognition on my career trajectory.</span>
         </p>
       </ContentArea>
     </Container>

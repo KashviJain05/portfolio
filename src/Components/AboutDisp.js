@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const Container = styled.div`
   padding: 40px 80px 40px 80px;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Work Sans", sans-serif;
 
   //media query to adjust padding
   @media (max-width: 60em) {
@@ -29,6 +29,7 @@ const ContainerWrap = styled.div`
 
   h2 {
     width: 100%;
+    font-family: "Alata";
     font-size: ${(props) => props.theme.fontxxxl};
     background-clip: text;
     color: transparent;
@@ -71,7 +72,7 @@ const Profile = styled.div`
   box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
   border-radius: 15px;
   width: 45%;
-  min-height: 70vh;
+  //min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -96,9 +97,9 @@ const Profile = styled.div`
     margin-top: 20px;
     padding: 20px;
     text-align: left;
-    letter-spacing: 1.5px;
     line-height: 25px;
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 1.35em;
+    font-weight:400;
 
     span {
       color: wheat;
@@ -110,6 +111,7 @@ const Profile = styled.div`
     }
 
     @media (max-width: 70em) {
+      font-size: ${(props) => props.theme.fontlg};
       letter-spacing: 1.2px;
     }
   }
@@ -124,6 +126,7 @@ const StackAnimation = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top:20px;
 
   img {
     width: 900px;
@@ -145,6 +148,7 @@ const StackAnimation = styled.div`
     animation: mymove 30s linear infinite;
 
     @media (max-width: 60em) {
+     
       width: 700px;
       height: 300px;
     }
