@@ -112,7 +112,6 @@ const Profile = styled.div`
 
     @media (max-width: 70em) {
       font-size: ${(props) => props.theme.fontlg};
-      letter-spacing: 1.2px;
     }
   }
 `;
