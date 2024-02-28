@@ -214,6 +214,7 @@ const AboutDisp = () => {
               <span>
                 short films, documentaries, corporate films, music videos, and
                 advertisements
+                </span>
               <br />
               <br />
               I look at the art of filmmaking as a medium to connect with
