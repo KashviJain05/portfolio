@@ -214,11 +214,9 @@ const AboutDisp = () => {
               <span>
                 short films, documentaries, corporate films, music videos, and
                 advertisements
-              </span>
-              . I am utterly enthralled by the artistry of film editing, where
-              every frame dances with the rhythm of storytelling.
               <br />
-              <br />I look at the art of filmmaking as a medium to connect with
+              <br />
+              I look at the art of filmmaking as a medium to connect with
               the audience and transport them to either a parallel world where
               they can drop all their worries and enter a land of virtues and
               fantasies or a mirroring world where they can call a spade a
