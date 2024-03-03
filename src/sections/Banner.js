@@ -30,7 +30,7 @@ const Container = styled.div`
 
 const BannerComponent = styled.h1`
   font-size: 4em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Merienda", cursive;
   color: #fff;
   white-space: nowrap;
   text-transform: uppercase;

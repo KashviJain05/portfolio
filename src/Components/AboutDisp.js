@@ -97,7 +97,6 @@ const Profile = styled.div`
     margin-top: 20px;
     padding: 20px;
     text-align: left;
-    line-height: 25px;
     font-size: 1.35em;
     font-weight:400;
 
@@ -214,6 +213,7 @@ const AboutDisp = () => {
               <span>
                 short films, documentaries, corporate films, music videos, and
                 advertisements
+                </span>
               <br />
               <br />
               I look at the art of filmmaking as a medium to connect with

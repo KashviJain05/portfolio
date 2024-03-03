@@ -58,7 +58,6 @@ const ContentArea = styled.div`
     max-width: 90%;
     padding: 20px;
     text-align: left;
-    line-height: 25px;
     font-size: 1.35em;
     box-shadow: 0px 10px 15px -3px rgb(34, 34, 79);
     border-radius: 15px;
