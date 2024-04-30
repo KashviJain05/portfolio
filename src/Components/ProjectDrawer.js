@@ -11,7 +11,7 @@ import vimeo from "../assets/images/Project Socials/Vimeo.png";
 
 import { Zoom } from "react-awesome-reveal";
 import { db } from "../firebaseinit";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 
 const ProjectContain = styled.div`
   width: 100%;
@@ -154,10 +154,12 @@ export default function ProjectDrawer() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Fetch projects from Firestore
+    // Fetch projects from Firestore sorted by creation date
     const fetchProjects = async () => {
       try {
-        const projectsSnapshot = await getDocs(collection(db, "projects"));
+        const projectsSnapshot = await getDocs(
+          query(collection(db, "projects"), orderBy("createdAt", "desc"))
+        );
         const projectsData = projectsSnapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
@@ -167,7 +169,7 @@ export default function ProjectDrawer() {
         console.error("Error fetching projects: ", error);
       }
     };
-
+  
     fetchProjects();
   }, []);
 

@@ -41,6 +41,7 @@ const PostProject = () => {
               Instagram: "",
               Vimeo: "",
               Drive: "",
+              createdAt: new Date(),
             });
             
             break;
@@ -54,6 +55,7 @@ const PostProject = () => {
               YouTube: "",
               Vimeo: "",
               Drive: "",
+              createdAt: new Date(),
             });
             break;
 
@@ -66,6 +68,7 @@ const PostProject = () => {
               YouTube: "",
               Instagram: "",
               Drive: "",
+              createdAt: new Date(),
             });
             break;
 
@@ -78,6 +81,7 @@ const PostProject = () => {
               YouTube: "",
               Instagram: "",
               Vimeo: "",
+              createdAt: new Date(),
             });
         
           default:
@@ -118,7 +122,7 @@ const PostProject = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "90vh",
       }}
     >
       <form
